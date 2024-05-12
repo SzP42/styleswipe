@@ -11,12 +11,13 @@ function checkifPasswordIsOK(passW) {
 }
 
 async function userSignUp(useremail, userpassword) {
+    // checks if the password matches the requirements 
     const doesItPass = checkifPasswordIsOK(userpassword) 
     if (!doesItPass) {
         alert("Password must be at least 6 characters long, must contain lowercase, uppercase, a number and a special character")
     } else {
+        // uses the supabase sdk to sign up the user
         try { 
-            console.log(useremail, userpassword)
     const { data, error } = await supabase.auth.signUp({email: useremail, password: userpassword, options: {emailRedirectTo: "/welcome"}})
     alert(`Confirm your email! We've sent a confirmation email to ${email}`)
     return data
@@ -26,13 +27,16 @@ async function userSignUp(useremail, userpassword) {
     }
 }
 
+async function handleSignInWithGoogle() {
+await supabase.auth.signInWithOAuth({
+  provider: "google",
+  options: {
+    redirectTo: `/auth/callback`,
+  },
+})
 
+}
 </script>
-
-<svelte:head>
-    <!-- needed for the google login -->
-    <script src="https://accounts.google.com/gsi/client" async></script>
-</svelte:head>
 
 <body>
 
@@ -48,13 +52,12 @@ async function userSignUp(useremail, userpassword) {
     <button on:click={() => userSignUp(email, password)}>Join StyleSwipe</button>
 </form>
 <p>Or</p>
-<p>Sign up with Google, or Apple (coming soon!)</p>
 
+<button on:click={handleSignInWithGoogle}> Sign in with Google </button>
 
-</div>
-
+<hr>
 <p>Already have an account? <a href="/login">Log in</a></p>
-
+</div>
 </body>
 <style lang="scss">
 body {

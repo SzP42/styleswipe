@@ -39,9 +39,9 @@
     <p>Log in with Google, or Apple (coming soon!)</p>
     
     
+    <p>You Don't have an account? <a href="/signup">Sign Up</a></p>
     </div>
     
-    <p>You Don't have an account? <a href="/signup">Sign Up</a></p>
     
     </body>
     <style lang="scss">
