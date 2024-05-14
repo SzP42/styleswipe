@@ -6,7 +6,7 @@ let password = ""
 
 function checkifPasswordIsOK(passW) {
     // ensures that there's at least one digit, one lowercase, one uppercase, and one symbol in the string and is at least 6 characters long
-    let pattern = /^(?=.*\d)(?=.*[a-z])(?=.*[A-Z])(?=.*[!@#$%^&*]).{6,}$/;
+    let pattern = /^(?=.*\d)(?=.*[a-z])(?=.*[A-Z])(?=.*[!@#$%^&*/<>,.+-=~$ß]).{6,}$/;
     return pattern.test(passW);
 }
 

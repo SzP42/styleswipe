@@ -11,7 +11,6 @@
   email: useremail,
   password: userpassword,
         })
-        console.log(data)
         goto("/welcome")
         return data
     } catch (error) {
