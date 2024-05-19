@@ -11,10 +11,14 @@
   email: useremail,
   password: userpassword,
         })
+        if (error == null) {
         goto("/welcome")
-        return data
-    } catch (error) {
-        console.error(error)
+        return data }
+        else {
+            alert(error)
+        }
+    } catch (err) {
+        console.error(err)
     }
 
 } 
