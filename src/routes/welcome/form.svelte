@@ -2,12 +2,22 @@
     // used for the price sliders 
     let price 
 
+    // recursive function that returns an array with numbers sequencing from start to end
+    function range(start, end) {
+    if (start === end) return [start];
+    return [start, ...range(start + 1, end)];
+    }
+
+    let sizes = ["XS", "S", "M", "L", "XL", "XXL"]
+    let shoesizes = range(38, 50)
+
 </script>
 
 <form id="initial_survey" name="initial_survey">
     <fieldset>
-        <legend>Choose a style that you like</legend>
-        <table class="centered-table">
+        <legend>Introduce yourself</legend>
+        <label for="styles">Choose 3 styles that you like</label>
+        <table class="centered-table" id="styles">
             <tr>
                 <td>
                     <label for="Style1">*Style1 image*</label>
@@ -60,14 +70,50 @@
             </tr>
         </table>
         <br>
+        <div class="size-inputs">
+            <label for="tshirt">What size are your t-shirts?</label>
+            <select name="tshirt" id="tshirt" required>
+                {#each sizes as size}
+                    <option value={size}>{size}</option>
+                {/each}
+            </select>
+            <br><br>
+
+            <label for="sweater">What size are your sweaters?</label>
+            <select name="sweater" id="sweater">
+                {#each sizes as size}
+                    <option value={size}>{size}</option>
+                {/each}
+            </select>
+            <br><br>
+
+            <label for="pants">What size are your pants?</label>
+            <select name="pants" id="pants">
+                {#each sizes as size}
+                    <option value={size}>{size}</option>
+                {/each}
+            </select>
+            <br><br>
+
+            <label for="shoe">What size shoes do you wear?</label>
+            <select name="shoe" id="shoe">
+                {#each shoesizes as size}
+                    <option value={size}>{size}</option>
+                {/each}
+            </select>
+            <br><br>
+
+        </div>
         <div class="slidecontainer" id="slidecontainer">
             <label for="slider">How big is your budget for a set?  <sub>Max: $5000</sub></label><br>
-            <input type="number" min=0 max=5000 bind:value={price}>
+            <input type="number" min=0 max=5000 bind:value={price} required>
                 <input type="range" class="slider" id="slider" min=60 max=5000 bind:value={price} name="price" ><br><br>
         </div>
+        <br>
         <!-- Used to check if the user has completed the form, and to redirect them away from the page if they have -->
         <input type="hidden" name="completed-form" value="true">
     </fieldset>
+    <br>
     <button type="submit">Let's go!</button>
 </form>
 

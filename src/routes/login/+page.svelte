@@ -1,6 +1,7 @@
 <script>
     import { supabase } from "$lib/supabaseClient.js"
 	import { goto } from "$app/navigation"
+    import { onMount } from "svelte";
     
     let email = ""
     let password = ""
@@ -13,15 +14,23 @@
         })
         if (error == null) {
         goto("/welcome")
-        return data }
-        else {
+        return data 
+    } else {
             alert(error)
         }
     } catch (err) {
+        alert(err)
         console.error(err)
     }
+}
 
-} 
+async function handleSignInWithGoogle() {
+await supabase.auth.signInWithOAuth({
+  provider: "google",
+  options: {
+    redirectTo: `/auth/callback`,
+  },
+})}
 
 </script>
 
@@ -39,7 +48,7 @@
         <button on:click={() => userLogIn(email, password)}>Enter StyleSwipe</button>
     </form>
     <p>Or</p>
-    <p>Log in with Google, or Apple (coming soon!)</p>
+    <button on:click={handleSignInWithGoogle}> Sign in with Google </button>
     
     
     <p>You Don't have an account? <a href="/signup">Sign Up</a></p>

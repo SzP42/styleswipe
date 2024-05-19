@@ -18,7 +18,8 @@ async function logout() {
 
     <Form />
 
-    <br>
+<br>
+</div>
 <button on:click={logout}>Log out</button>
 </body>
 

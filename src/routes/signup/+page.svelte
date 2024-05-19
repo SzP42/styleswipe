@@ -53,7 +53,7 @@ await supabase.auth.signInWithOAuth({
 </form>
 <p>Or</p>
 
-<button on:click={handleSignInWithGoogle}> Sign in with Google </button>
+<button on:click={handleSignInWithGoogle}> Sign up with Google </button>
 
 <hr>
 <p>Already have an account? <a href="/login">Log in</a></p>
