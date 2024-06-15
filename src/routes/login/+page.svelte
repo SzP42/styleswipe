@@ -1,7 +1,6 @@
 <script>
     import { supabase } from "$lib/supabaseClient.js"
 	import { goto } from "$app/navigation"
-    import { onMount } from "svelte";
     
     let email = ""
     let password = ""
@@ -56,7 +55,7 @@ await supabase.auth.signInWithOAuth({
     
     
     </body>
-    <style lang="scss">
+    <style>
     body {
         font-family: Arial, Helvetica, sans-serif;
     }

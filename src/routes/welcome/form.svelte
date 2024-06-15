@@ -1,4 +1,5 @@
 <script>
+    import { goto } from "$app/navigation";
     // used for the price sliders 
     let price 
 
@@ -11,61 +12,63 @@
     let sizes = ["XS", "S", "M", "L", "XL", "XXL"]
     let shoesizes = range(38, 50)
 
+
+
 </script>
 
-<form id="initial_survey" name="initial_survey">
+<form id="initial_survey" name="initial_survey" method="post" action="?/setSurveyData" on:submit={() => {goto("/app")}}>
     <fieldset>
         <legend>Introduce yourself</legend>
         <label for="styles">Choose 3 styles that you like</label>
         <table class="centered-table" id="styles">
             <tr>
                 <td>
-                    <label for="Style1">*Style1 image*</label>
-                    <input type="checkbox" id="Style1" name="Style1" value={true}>
+                    <label for="style1">*style1 image*</label>
+                    <input type="checkbox" id="style1" name="style1" value={true}>
                 </td>
 
                 <td>
-                    <label for="Style2">*Style2 image*</label>
-                    <input type="checkbox" id="Style2" name="Style2" value={true}>
+                    <label for="style2">*style2 image*</label>
+                    <input type="checkbox" id="style2" name="style2" value={true}>
                 </td>
 
                 <td>
-                    <label for="Style3">*Style3 image*</label>
-                    <input type="checkbox" id="Style3" name="Style3" value={true}>
-                </td>
-            </tr>
-
-            <tr>
-                <td>
-                    <label for="Style4">*Style4 image*</label>
-                    <input type="checkbox" id="Style4" name="Style4" value={true}>
-                </td>
-
-                <td>
-                    <label for="Style5">*Style5 image*</label>
-                    <input type="checkbox" id="Style5" name="Style5" value={true}>
-                </td>
-
-                <td>
-                    <label for="Style6">*Style6 image*</label>
-                    <input type="checkbox" id="Style6" name="Style6" value={true}>
+                    <label for="style3">*style3 image*</label>
+                    <input type="checkbox" id="style3" name="style3" value={true}>
                 </td>
             </tr>
 
             <tr>
                 <td>
-                    <label for="Style7">*Style7 image*</label>
-                    <input type="checkbox" id="Style7" name="Style7" value={true}>
+                    <label for="style4">*style4 image*</label>
+                    <input type="checkbox" id="style4" name="style4" value={true}>
                 </td>
 
                 <td>
-                    <label for="Style8">*Style8 image*</label>
-                    <input type="checkbox" id="Style8" name="Style8" value={true}>
+                    <label for="style5">*style5 image*</label>
+                    <input type="checkbox" id="style5" name="style5" value={true}>
                 </td>
 
                 <td>
-                    <label for="Style9">*Style9 image*</label>
-                    <input type="checkbox" id="Style9" name="Style9" value={true}>
+                    <label for="style6">*style6 image*</label>
+                    <input type="checkbox" id="style6" name="style6" value={true}>
+                </td>
+            </tr>
+
+            <tr>
+                <td>
+                    <label for="style7">*style7 image*</label>
+                    <input type="checkbox" id="style7" name="style7" value={true}>
+                </td>
+
+                <td>
+                    <label for="style8">*style8 image*</label>
+                    <input type="checkbox" id="style8" name="style8" value={true}>
+                </td>
+
+                <td>
+                    <label for="style9">*style9 image*</label>
+                    <input type="checkbox" id="style9" name="style9" value={true}>
                 </td>
             </tr>
         </table>

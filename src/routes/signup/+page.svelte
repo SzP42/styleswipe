@@ -59,7 +59,7 @@ await supabase.auth.signInWithOAuth({
 <p>Already have an account? <a href="/login">Log in</a></p>
 </div>
 </body>
-<style lang="scss">
+<style>
 body {
     font-family: Arial, Helvetica, sans-serif;
 }

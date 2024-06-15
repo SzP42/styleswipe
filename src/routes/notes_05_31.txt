@@ -1,0 +1,10 @@
+- in the +page.server.js file in routes/welcome:
+    + get the user session
+    + make a query to the users table and decide wheter the user has completed the initial quiz or not, if they have redirect them to the app
+    + build the table contains the user's data
+
+
+- routes/app 
+    + this is where the swiping capabilities will go. 
+
+- check the tailwind documentation and the documentation for the swiper cards 
