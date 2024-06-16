@@ -2,6 +2,7 @@
     + get the user session
     + make a query to the users table and decide wheter the user has completed the initial quiz or not, if they have redirect them to the app
     + build the table contains the user's data
+    + insert the answers to the table
 
 
 - routes/app 

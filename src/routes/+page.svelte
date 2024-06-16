@@ -9,6 +9,7 @@
     onMount( () => {supabase.auth.getSession()
     .then(response => {
         if (response["data"]["session"]) {
+            console.log(response["data"]["session"])
             goto("/welcome")
         }
     })})

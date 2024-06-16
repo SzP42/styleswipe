@@ -11,9 +11,22 @@
   email: useremail,
   password: userpassword,
         })
+        const loginData = data
         if (error == null) {
-        goto("/welcome")
-        return data 
+        const { data , error } = await supabase
+        .from('style_prefs')
+        .select('id')
+        .eq(loginData['user']['id'])
+        
+        if (!data) {
+            goto('/welcome')
+        } else { 
+            goto('/app')
+        }
+
+
+        // goto("/welcome")
+        return loginData
     } else {
             alert(error)
         }

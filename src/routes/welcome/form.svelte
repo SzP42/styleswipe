@@ -1,22 +1,37 @@
 <script>
-    import { goto } from "$app/navigation";
+	import { enhance } from "$app/forms";
+	import { goto } from "$app/navigation";
+
+    export let userId
+    export let jwt
+    
     // used for the price sliders 
     let price 
 
+   
     // recursive function that returns an array with numbers sequencing from start to end
     function range(start, end) {
     if (start === end) return [start];
     return [start, ...range(start + 1, end)];
     }
 
+    const handleSubmit = () => {
+    return async ({ result }) => {
+      const formResponse = result.data;
+      if (formResponse) {
+        goto('/app')
+      } else {
+        alert('Something went wrong!')
+      }
+    };
+  };
+
     let sizes = ["XS", "S", "M", "L", "XL", "XXL"]
     let shoesizes = range(38, 50)
 
-
-
 </script>
 
-<form id="initial_survey" name="initial_survey" method="post" action="?/setSurveyData" on:submit={() => {goto("/app")}}>
+<form id="initial_survey" name="initial_survey" method="post" action="?/setSurveyData" use:enhance={handleSubmit}>
     <fieldset>
         <legend>Introduce yourself</legend>
         <label for="styles">Choose 3 styles that you like</label>
@@ -114,7 +129,9 @@
         </div>
         <br>
         <!-- Used to check if the user has completed the form, and to redirect them away from the page if they have -->
-        <input type="hidden" name="completed-form" value="true">
+        <input type="hidden" name="completed_form" value={true}>
+        <input type="hidden" name="id" value={userId}>
+        <input type="hidden" name="jwt" value={jwt}>
     </fieldset>
     <br>
     <button type="submit">Let's go!</button>
