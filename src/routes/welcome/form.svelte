@@ -3,12 +3,10 @@
 	import { goto } from "$app/navigation";
 
     export let userId
-    export let jwt
     
     // used for the price sliders 
     let price 
 
-   
     // recursive function that returns an array with numbers sequencing from start to end
     function range(start, end) {
     if (start === end) return [start];
@@ -131,7 +129,6 @@
         <!-- Used to check if the user has completed the form, and to redirect them away from the page if they have -->
         <input type="hidden" name="completed_form" value={true}>
         <input type="hidden" name="id" value={userId}>
-        <input type="hidden" name="jwt" value={jwt}>
     </fieldset>
     <br>
     <button type="submit">Let's go!</button>
