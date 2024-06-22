@@ -9,9 +9,6 @@ export const actions = {
         const formDataObj = Object.fromEntries(formData.entries())
         console.log(formDataObj)
 
-        const sessData = await supabase.auth.getUser()
-        console.log(sessData)
-
         const { data, error } = await supabase
         .from('style_prefs')
         .insert(formDataObj)
