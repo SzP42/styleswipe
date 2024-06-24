@@ -11,25 +11,23 @@
   email: useremail,
   password: userpassword,
         })
-        const loginData = data
-        if (error == null) {
-        const { data , error } = await supabase
-        .from('style_prefs')
-        .select('id')
-        .eq(loginData['user']['id'])
+        goto('/app')
+    //     const loginData = data
+    //     if (error == null) {
+    //     const { data , error } = await supabase
+    //     .from('style_prefs')
+    //     .select('id')
+    //     .eq(loginData['user']['id'])
         
-        if (!data) {
-            goto('/welcome')
-        } else { 
-            goto('/app')
-        }
-
-
-        // goto("/welcome")
-        return loginData
-    } else {
-            alert(error)
-        }
+    //     if (!data) {
+    //         goto('/welcome')
+    //     } else { 
+    //         goto('/app')
+    //     }
+    //     return loginData
+    // } else {
+    //         alert(error)
+    //     }
     } catch (err) {
         alert(err)
         console.error(err)

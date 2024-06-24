@@ -3,6 +3,8 @@ export type CardData = {
 	color?: string;
 	description?: string;
 	image?: string;
+	productLink?: string;
+	productId?: string;
 };
 
 export type Direction = 'left' | 'right';

@@ -18,8 +18,8 @@
 	let currentZ = 100000;
 
 	onMount(async () => {
-		card1Data = cardData(cardIndex++);
-		card2Data = cardData(cardIndex++);
+		card1Data = cardData(cardIndex++); // modify cardData function to get the data for the new styles
+		card2Data = cardData(cardIndex++); 
 
 		[card1, card2].forEach(function (el) {
 			el.style.zIndex = currentZ.toString();
@@ -34,6 +34,7 @@
 		container.classList.remove('hidden');
 	});
 
+	// modify this function 
 	const cardSwiped = (el: HTMLElement, velocity: [number, number], movement: [number, number]) => {
 		// move card out of the view
 		el.classList.add('transition-transform', 'duration-300');
@@ -57,7 +58,7 @@
 
 		setTimeout(() => {
 			thresholdPassed = 0;
-
+			
 			// move card back to start position at bottom of stack and update data
 			if (el === card1) {
 				card1Data = {};
@@ -120,7 +121,8 @@
 		let dir = direction === 'left' ? -1 : 1;
 		cardSwiped(topCard, [dir, 0.1], [dir, 1]);
 	};
-
+	
+	// modify the cardData function to get the data for the new styles
 	export let cardData: (index: number) => CardData;
 
 	export let minSwipeDistance: number = 0.5;
@@ -143,6 +145,6 @@
 <div class="w-full h-full">
 	<div class="w-full h-full relative hidden z-0" bind:this={container}>
 		<svelte:component this={Card} bind:element={card1} {...card1Data} />
-		<!-- <svelte:component this={Card} bind:element={card2} {...card2Data} /> -->
+		<svelte:component this={Card} bind:element={card2} {...card2Data} />
 	</div>
 </div>
