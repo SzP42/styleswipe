@@ -20,7 +20,7 @@ onMount(async () => {
         const { data , error } = await supabase
         .from('style_prefs')
         .select('completed_form')
-        .eq('id', user.id)
+        .eq('user_id', user.id)
 
         if (data.length > 0) {
             goto('/app')

@@ -128,7 +128,7 @@
         <br>
         <!-- Used to check if the user has completed the form, and to redirect them away from the page if they have -->
         <input type="hidden" name="completed_form" value={true}>
-        <input type="hidden" name="id" value={userId}>
+        <input type="hidden" name="user_id" value={userId}>
     </fieldset>
     <br>
     <button type="submit">Let's go!</button>
