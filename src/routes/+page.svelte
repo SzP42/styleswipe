@@ -6,13 +6,13 @@
 
     // export let data
     
-    onMount( () => {supabase.auth.getSession()
-    .then(response => {
-        if (response["data"]["session"]) {
-            console.log(response["data"]["session"])
-            goto("/welcome")
-        }
-    })})
+    // onMount( () => {supabase.auth.getSession()
+    // .then(response => {
+    //     if (response["data"]["session"]) {
+    //         console.log(response["data"]["session"])
+    //         goto("/welcome")
+    //     }
+    // })})
 </script>
 <body>
 <h1 class="text-3xl font-bold underline">Welcome to StyleSwipe</h1>
