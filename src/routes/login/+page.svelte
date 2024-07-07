@@ -1,6 +1,9 @@
 <script>
-    import { supabase } from "$lib/supabaseClient.js"
+    // import { supabase } from "$lib/supabaseClient.js"
 	import { goto } from "$app/navigation"
+
+    export let data 
+    const { supabase } = data
     
     let email = ""
     let password = ""
@@ -11,23 +14,11 @@
   email: useremail,
   password: userpassword,
         })
-        goto('/app')
-    //     const loginData = data
-    //     if (error == null) {
-    //     const { data , error } = await supabase
-    //     .from('style_prefs')
-    //     .select('id')
-    //     .eq(loginData['user']['id'])
-        
-    //     if (!data) {
-    //         goto('/welcome')
-    //     } else { 
-    //         goto('/app')
-    //     }
-    //     return loginData
-    // } else {
-    //         alert(error)
-    //     }
+        if (!error) {
+            goto('/app')
+        } else {
+            alert(error)
+        }
     } catch (err) {
         alert(err)
         console.error(err)

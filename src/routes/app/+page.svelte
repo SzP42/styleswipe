@@ -3,11 +3,13 @@
     import { supabase } from "$lib/supabaseClient.js"
     import { goto } from '$app/navigation'
 
+    export let data
+    console.log(data['data'])
 
     // the card that will come up next
-    let nextCard 
+    
 
-    let data = (index) => {
+    let cardData = (index) => {
       return {
         title: 'Style name ' + index,
         description: 'Content of the set',
@@ -31,7 +33,8 @@
   </script>
   
   <div class="h-screen w-screen" align="center">
-    <CardSwiper cardData={data} minSwipeDistance={0.25} on:swiped={swiper}/>
+    <CardSwiper cardData={cardData} minSwipeDistance={0.25} on:swiped={swiper}/>
   </div>
 
-  <button on:click={logout}>log out</button>
+  
+<button on:click={logout}>log out</button>
