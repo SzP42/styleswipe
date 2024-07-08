@@ -18,8 +18,8 @@
 	let currentZ = 100000;
 
 	onMount(async () => {
-		card1Data = cardData(cardIndex++); // modify cardData function to get the data for the new styles
-		card2Data = cardData(cardIndex++); 
+		card1Data = await cardData(cardIndex++); // modify cardData function to get the data for the new styles
+		card2Data = await cardData(cardIndex++); 
 
 		[card1, card2].forEach(function (el) {
 			el.style.zIndex = currentZ.toString();
@@ -56,17 +56,17 @@
 
 		el.style.transform = `translate(${toX}px, ${toY + movement[1]}px) rotate(${rotate}deg)`;
 
-		setTimeout(() => {
+		setTimeout(async () => {
 			thresholdPassed = 0;
 			
 			// move card back to start position at bottom of stack and update data
 			if (el === card1) {
 				card1Data = {};
-				card1Data = cardData(cardIndex++);
+				card1Data = await cardData(cardIndex++);
 				topCard = card2;
 			} else {
 				card2Data = {};
-				card2Data = cardData(cardIndex++);
+				card2Data = await cardData(cardIndex++);
 				topCard = card1;
 			}
 
@@ -131,6 +131,8 @@
 	export let arrowKeys = true;
 	
 	export let thresholdPassed = 0;
+	// the array for the preloaded sets
+
 </script>
 
 <svelte:body on:keydown={(e) => {
