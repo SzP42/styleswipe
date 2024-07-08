@@ -4,6 +4,8 @@ import { sequence } from '@sveltejs/kit/hooks'
 
 import { PUBLIC_SUPABASE_URL, PUBLIC_SUPABASE_ANON_KEY } from '$env/static/public'
 
+console.log(PUBLIC_SUPABASE_URL, PUBLIC_SUPABASE_ANON_KEY)
+
 const supabase: Handle = async ({ event, resolve }) => {
   /**
    * Creates a Supabase client specific to this server request.
