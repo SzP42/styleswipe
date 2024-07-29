@@ -3,6 +3,7 @@
 	import { DragGesture, type FullGestureState } from '@use-gesture/vanilla';
 	import type { CardData, Direction } from '.';
 	import Card from './Card.svelte';
+	import { currentSetId } from '../stores'
 
 	import { createEventDispatcher } from 'svelte';
 
@@ -34,7 +35,6 @@
 		container.classList.remove('hidden');
 	});
 
-	// modify this function 
 	const cardSwiped = (el: HTMLElement, velocity: [number, number], movement: [number, number]) => {
 		// move card out of the view
 		el.classList.add('transition-transform', 'duration-300');
@@ -122,7 +122,6 @@
 		cardSwiped(topCard, [dir, 0.1], [dir, 1]);
 	};
 	
-	// modify the cardData function to get the data for the new styles
 	export let cardData: (index: number) => CardData;
 
 	export let minSwipeDistance: number = 0.5;

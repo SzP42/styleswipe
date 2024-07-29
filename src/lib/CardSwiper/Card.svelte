@@ -7,6 +7,8 @@
 	export let title: string = '';
 	export let description: string = '';
 	export let image: string | undefined = undefined;
+	export let productLink: string = ''
+
 </script>
 
 <div
@@ -20,9 +22,11 @@
 	{/key}
 	<div class="absolute inset-0 bg-gradient-to-t from-white/80 via-white/0 rounded-b-xl"></div>
 	<div class="p-4 absolute bottom-0 w-full flex justify-center">
+		<a href={productLink}>
 		<div class="flex items-center flex-col">
 			<h3 class="text-3xl font-semibold pb-4">{title}</h3>
 			<p>{description}</p>
 		</div>
+		</a>
 	</div>
 </div>

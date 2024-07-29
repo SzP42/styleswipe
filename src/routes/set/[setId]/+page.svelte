@@ -1,26 +1,32 @@
 <script>
-    import { page } from "$app/stores";
-    import { supabase } from "$lib/supabaseClient.js"
     import { goto } from "$app/navigation";
 
-    const setId = $page.params.setId
+    export let data
+
+    let {setId} = data
+    let {name} = data
+    let {urlArr} = data
+    let {price} = data
+    const {supabase} = data
+
+    console.log(urlArr)
 
     async function logout() {
     const { error } = await supabase.auth.signOut() 
     goto("/")
   }
 
-
 </script>
 
 <body>
-    <h1>name of set {setId}</h1>
+  <div>
+    <h1>{name}</h1>
+    <h3>{price}</h3>
+  </div>
 
-    <img alt='image carousel of set {setId}' src="">
-
-    <p>price of set {setId}</p>
-
-    <p>stripe window on the right</p>
+  {#each urlArr as image}
+    <img src={image} alt={name}>
+  {/each}
 
     <button on:click={logout}>log out</button>
 

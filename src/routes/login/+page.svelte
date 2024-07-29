@@ -1,10 +1,15 @@
 <script>
     // import { supabase } from "$lib/supabaseClient.js"
 	import { goto } from "$app/navigation"
+    import { onMount } from "svelte";
 
     export let data 
     const { supabase } = data
     
+    onMount( async () => {
+        const { data, error } = await supabase.auth.getSession()
+        if (data) {goto('/app')}})
+
     let email = ""
     let password = ""
 

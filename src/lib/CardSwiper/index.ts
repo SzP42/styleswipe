@@ -4,7 +4,6 @@ export type CardData = {
 	description?: string;
 	image?: string;
 	productLink?: string;
-	setId?: string;
 };
 
 export type Direction = 'left' | 'right';
