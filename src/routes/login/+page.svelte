@@ -8,7 +8,7 @@
     
     onMount( async () => {
         const { data, error } = await supabase.auth.getSession()
-        if (data) {goto('/app')}})
+        if (data['session']) {goto('/app')}})
 
     let email = ""
     let password = ""

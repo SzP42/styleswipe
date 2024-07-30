@@ -2,11 +2,13 @@ export const load = async (event) => {
 
     const { supabase } = event.locals
     const setId = event.params.setId;
-  
+
     const resp = await supabase
     .from('sett')
     .select()
     .eq('set_id', setId)
+
+    
 
     if (resp['error']) {console.error(resp['error'])}
     let name = resp['data'][0]['name']
