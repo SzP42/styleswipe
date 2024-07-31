@@ -1,8 +1,12 @@
 <script>
-import { supabase } from "$lib/supabaseClient.js"
 
 let email = ""
 let password = ""
+
+
+export let data
+
+const { supabase } = data
 
 function checkifPasswordIsOK(passW) {
     // ensures that there's at least one digit, one lowercase, one uppercase, and one symbol in the string and is at least 6 characters long
@@ -18,7 +22,7 @@ async function userSignUp(useremail, userpassword) {
     } else {
         // uses the supabase sdk to sign up the user
         try { 
-    const { data, error } = await supabase.auth.signUp({email: useremail, password: userpassword, options: {emailRedirectTo: "/welcome"}})
+    const { data, error } = await supabase.auth.signUp({email: useremail, password: userpassword, options: {emailRedirectTo: "/app"}})
     alert(`Confirm your email! We've sent a confirmation email to ${email}`)
     return data
         } catch (err) {
