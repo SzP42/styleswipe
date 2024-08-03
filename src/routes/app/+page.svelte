@@ -6,6 +6,7 @@
     export let data
 
     if (data['error']) {console.error(data['error'])}
+    
     const { supabase } = data
 
     // the card that will come up next

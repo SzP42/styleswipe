@@ -7,6 +7,7 @@
     let {name} = data
     let {urlArr} = data
     let {price} = data
+    
     const {supabase} = data
 
     async function logout() {
