@@ -42,7 +42,7 @@ await supabase.auth.signInWithOAuth({
 
 <body class="bg-bright_bg">
     <div class="flex flex-col w-full md:w-1/2 xl:w-2/5 2xl:w-2/5 3xl:w-1/3 mx-auto p-8 md:p-10 2xl:p-12 3xl:p-14 bg-dark_bg rounded-2xl shadow-xl min-h-screen font-serif text-bright_text">
-        <img src="src\lib\images\stsw_transparent-bright.png" alt="stsw" class="flex mx-auto h-40">
+        <img src="/images/stsw_transparent-bright.png" alt="stsw" class="flex mx-auto h-40">
         <div class="flex flex-col justify-center mx-auto gap-3">
             <h3 class="flex justify-center mb-3 text-2xl">Log in</h3>
             <form>
