@@ -130,7 +130,6 @@
 	export let arrowKeys = true;
 	
 	export let thresholdPassed = 0;
-	// the array for the preloaded sets
 
 </script>
 
@@ -143,9 +142,19 @@
 	}
 }} />
 
-<div class="w-full h-full">
-	<div class="w-full h-full relative hidden z-0" bind:this={container}>
+
+<div class="w-full h-auto md:w-7/12 lg:w-1/2 lg:h-5/6 xl:w-1/4 mt-6">
+	<div class="w-5/6 h-5/6 relative hidden z-0" bind:this={container}>
 		<svelte:component this={Card} bind:element={card1} {...card1Data} />
 		<svelte:component this={Card} bind:element={card2} {...card2Data} />
 	</div>
+	<div class="grid grid-cols-2 w-5/6 h-20 mt-5">
+		<div class="flex justify-start">
+			<button on:click={() => {swipe("left")}} class="bg-input_bg hover:bg-special_state_bg text-4xl rounded-full w-20">👎</button>
+		</div>
+		<div class="flex justify-end">
+			<button on:click={() => {swipe("right")}} class="bg-input_bg hover:bg-special_state_bg text-4xl rounded-full w-20">👍</button>
+		</div>
+	</div>
 </div>
+

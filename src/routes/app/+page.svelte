@@ -16,8 +16,10 @@
 
       return {
         title: clothesObj['name'],
-        description: clothesObj['price'],
-        image: clothesObj['clothes'][0]['publicUrl'],
+        description: clothesObj['clothes'].length,
+        // needed to update the UI more easily
+        image: clothesObj['clothes'][0]["publicUrl"],
+        imageArr: clothesObj['clothes'],
         productLink: `/set/${$currentSetId}`
       }
     }
@@ -98,10 +100,15 @@ for (let i=0; i < imageData.length; i++) {
 
     
   </script>
-  
-  <div class="h-screen w-screen" align="center">
-    <CardSwiper cardData={cardData} minSwipeDistance={0.25} on:swiped={swiper} />
-  </div>
 
-  
-<button on:click={logout}>log out</button>
+  <body class="bg-dark_bg font-serif">
+    <div class="flex flex-col-reverse xl:flex-row justify-center">
+      <div class="grid grid-rows-2 justify-items-center h-1/4 w-1/6 md:">
+        <img src="/images/stsw_transparent-bright.png" alt="stsw logo" class="flex mx-auto h-44">
+        <button on:click={logout} class="bg-input_bg hover:bg-special_state_bg text-input_text w-20 h-10 rounded-full">Log out</button>
+      </div>
+      <div class="flex justify-center h-screen w-screen">
+        <CardSwiper cardData={cardData} minSwipeDistance={0.25} on:swiped={swiper} />
+      </div>
+    </div>
+  </body>

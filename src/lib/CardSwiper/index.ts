@@ -3,6 +3,7 @@ export type CardData = {
 	color?: string;
 	description?: string;
 	image?: string;
+	imageArr?: Array<object>
 	productLink?: string;
 };
 
