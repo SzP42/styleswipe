@@ -103,8 +103,8 @@ for (let i=0; i < imageData.length; i++) {
 
   <body class="bg-dark_bg font-serif">
     <div class="flex flex-col-reverse xl:flex-row justify-center">
-      <div class="grid grid-rows-2 justify-items-center h-1/4 w-1/6 md:">
-        <img src="/images/stsw_transparent-bright.png" alt="stsw logo" class="flex mx-auto h-44">
+      <div class="grid grid-rows-2 justify-items-center h-1/4 w-1/6">
+        <img src="/images/stsw_transparent-bright.png" alt="stsw logo" class="flex mx-auto h-full w-auto">
         <button on:click={logout} class="bg-input_bg hover:bg-special_state_bg text-input_text w-20 h-10 rounded-full">Log out</button>
       </div>
       <div class="flex justify-center h-screen w-screen">
