@@ -143,7 +143,7 @@
 }} />
 
 
-<div class="w-full h-auto md:w-7/12 lg:w-1/2 lg:h-5/6 xl:w-1/4 mt-6 ml-6">
+<div class="w-full h-auto md:w-7/12 lg:w-1/2 lg:h-5/6 xl:w-1/3 m-6 mr-0">
 	<div class="w-5/6 h-5/6 relative hidden z-0" bind:this={container}>
 		<svelte:component this={Card} bind:element={card1} {...card1Data} />
 		<svelte:component this={Card} bind:element={card2} {...card2Data} />
