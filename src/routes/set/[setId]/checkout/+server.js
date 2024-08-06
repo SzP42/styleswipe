@@ -1,7 +1,11 @@
 import { json } from '@sveltejs/kit';
-import { stripe } from "../../../../stripe"
+import Stripe from "stripe";
 
-// console.log(stripe)
+const STRIPE_LIVE_KEY = process.env.STRIPE_SECRET_KEY
+
+const stripe = new Stripe(STRIPE_LIVE_KEY, {
+    apiVersion: "2024-06-20"
+})
 
 export async function POST(event) {
     const {params, url } = event
