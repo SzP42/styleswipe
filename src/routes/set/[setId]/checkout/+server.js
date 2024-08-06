@@ -7,15 +7,23 @@ export async function POST(event) {
     const {params, url } = event
     const { supabase } = event.locals
 
-
     const data = await event.request.json()
+
+    let stripeMetadata = {}
+
+    for (let i=0; i < data["selectedSizes"].length; i++) {
+        stripeMetadata[`${i}`] = data['selectedSizes'][i]
+    }
+
+    console.log(stripeMetadata)
+
 
     const stripe_data = {
     price_data: {
         currency: 'USD',
         product_data: {
             name: data['name'],
-            images: data['urlArr']
+            images: data['urlArr'],
         },
         unit_amount: data.price * 100
     }, 
@@ -34,8 +42,9 @@ const session = await stripe.checkout.sessions.create({
 
     }, 
     mode: "payment",
-    success_url: `${env.BASE}/payment-success`,
-    cancel_url: `${env.BASE}/payment-fail`,
+    success_url: `https://styleswipe.vercel.app/payment-success`,
+    cancel_url: `https://styleswipe.vercel.app/payment-fail`,
+    metadata: stripeMetadata
 })
 
     return(json({url: session.url}))

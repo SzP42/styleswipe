@@ -14,7 +14,7 @@
 </script>
 
 <div
-	class="w-full h-full absolute cursor-grab ease-in-out rounded-xl touch-none select-none bg-[#f2f2f2] border-2 border-black {color} overflow-hidden"
+	class="w-full h-full absolute cursor-grab ease-in-out rounded-xl touch-none select-none bg-[#f2f2f2] border-2 border-black {color} overflow-hidden flex justify-center mt-6 mb-6"
 	bind:this={element}
 >
 	{#key image}
@@ -34,7 +34,7 @@
 		<div class="grid grid-cols-3">
 			<div class="flex flex-col justify-start col-span-2">
 				<a href={productLink} target="_blank">
-					<h3 class="text-lg font-semibold text-wrap text-dark_text">{title}</h3> 
+					<h3 class="text-lg font-semibold text-wrap text-dark_text underline ">{title}</h3> 
 				</a>
 				<p>{description} items</p>
 			</div>
@@ -45,7 +45,7 @@
 		{:else}
 		<div class="flex items-center flex-col">
 			<a href={productLink}>
-				<h3 class="text-3xl font-semibold pb-4 text-dark_text">{title}</h3>
+				<h3 class="text-3xl font-semibold pb-4 text-dark_text underline ">{title}</h3>
 			</a>
 			{#if description == '1'}
 			<p>{description} item</p>
