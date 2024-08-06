@@ -41,9 +41,9 @@ const session = await stripe.checkout.sessions.create({
     mode: "payment",
     success_url: `https://styleswipe.vercel.app/payment-success`,
     cancel_url: `https://styleswipe.vercel.app/payment-fail`,
+    metadata: stripeMetadata
 })
 
-    console.log(session.url)
     return(json({url: session.url}))
 
 }
