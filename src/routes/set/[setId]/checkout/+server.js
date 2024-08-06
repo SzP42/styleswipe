@@ -1,6 +1,8 @@
 import { json } from '@sveltejs/kit';
 import { stripe } from "../../../../stripe"
 
+// console.log(stripe)
+
 export async function POST(event) {
     const {params, url } = event
     const { supabase } = event.locals
@@ -12,9 +14,6 @@ export async function POST(event) {
     for (let i=0; i < data["selectedSizes"].length; i++) {
         stripeMetadata[`${i}`] = data['selectedSizes'][i]
     }
-
-    console.log(stripeMetadata)
-
 
     const stripe_data = {
     price_data: {
@@ -44,6 +43,7 @@ const session = await stripe.checkout.sessions.create({
     cancel_url: `https://styleswipe.vercel.app/payment-fail`,
 })
 
+    console.log(session.url)
     return(json({url: session.url}))
 
 }
