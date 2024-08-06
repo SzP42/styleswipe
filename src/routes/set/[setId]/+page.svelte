@@ -57,7 +57,7 @@
 
 </script>
 
-<body class=" font-serif">  
+<body class="font-serif bg-bright_bg">  
   <div class="flex justify-center mt-9 mb-9">
     <h1 class="bold text-5xl">{name}</h1>
   </div>

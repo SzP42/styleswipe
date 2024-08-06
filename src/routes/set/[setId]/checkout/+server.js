@@ -1,7 +1,5 @@
 import { json } from '@sveltejs/kit';
 import { stripe } from "../../../../stripe"
-import { env } from "$env/dynamic/private" 
-
 
 export async function POST(event) {
     const {params, url } = event
@@ -44,7 +42,6 @@ const session = await stripe.checkout.sessions.create({
     mode: "payment",
     success_url: `https://styleswipe.vercel.app/payment-success`,
     cancel_url: `https://styleswipe.vercel.app/payment-fail`,
-    metadata: stripeMetadata
 })
 
     return(json({url: session.url}))
