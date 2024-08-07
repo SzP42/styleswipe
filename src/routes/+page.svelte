@@ -25,29 +25,29 @@
                 <li>
                     
                     
-                <span class="block h-1 rounded-full bg-bright-bg"></span><a class="nav-link" href="#">Home</a>
-                    <span class="block h-1 rounded-full bg-bright-bg"></span>
+                <span class="block h-1 rounded-full bg-bright_bg"></span><a class="nav-link" href="#">Home</a>
+                    <span class="block h-1 rounded-full bg-bright_bg"></span>
                 </li>
                 <li>
                     
-                <span class="block h-1 rounded-full bg-bright-bg"></span><a class="nav-link" href="#">About us</a>
-                    <span class="block h-1 rounded-full bg-bright-bg"></span>
+                <span class="block h-1 rounded-full bg-bright_bg"></span><a class="nav-link" href="#">About us</a>
+                    <span class="block h-1 rounded-full bg-bright_bg"></span>
                 </li>
                 <li>
                     
-                <span class="block h-1 rounded-full bg-bright-bg"></span><a class="nav-link" href="#">Founders</a>
-                    <span class="block h-1 rounded-full bg-bright-bg"></span>
+                <span class="block h-1 rounded-full bg-bright_bg"></span><a class="nav-link" href="#">Founders</a>
+                    <span class="block h-1 rounded-full bg-bright_bg"></span>
                 </li>
                 <li>
                     
-                <span class="block h-1 rounded-full bg-bright-bg"></span><a class="nav-link" href="#">Contact us</a>
-                    <span class="block h-1 rounded-full bg-bright-bg"></span>
+                <span class="block h-1 rounded-full bg-bright_bg"></span><a class="nav-link" href="#">Contact us</a>
+                    <span class="block h-1 rounded-full bg-bright_bg"></span>
                 </li>
-                <span class="block h-3 rounded-full bg-bright-bg"></span>
+                <span class="block h-3 rounded-full bg-bright_bg"></span>
                 <li>
-                    <a class="btn text-dark-text bg-bright-bg btn-outline btn-lg font-medium capitalize border-2 border-dark-text rounded-lg p-1 hover:text-bright-text hover:bg-dark-bg text-lg" href="/login">Get Started</a>
+                    <a class="btn text-dark_text bg-bright_bg btn-outline btn-lg font-medium capitalize border-2 border-dark_text rounded-lg p-1 hover:text-bright_text hover:bg-dark_bg text-lg" href="/login">Get Started</a>
             </li>
-            <span class="block h-1 rounded-full bg-bright-bg"></span>
+            <span class="block h-1 rounded-full bg-bright_bg"></span>
             </ul>
         </div>
         <script>
@@ -58,18 +58,18 @@
           </script>
     </div>
 </nav>
-<section class="py-16 bg-bright-bg lg:py-32">
+<section class="py-16 bg-bright_bg align-middle lg:py-32">
     <div class="container">
         <div class="row gap-y-12">
-            <div class="ml-5 col lg:w-6/12 text-dark-text">
-                <h1 class="mb-8 text-dark-text text-3xl">Find your dream outfits just by swiping!</h1>
+            <div class="ml-5 col lg:w-6/12 text-dark_text">
+                <h1 class="mb-8 text-dark_text text-3xl">Find your dream outfits just by swiping!</h1>
                 <p class="mb-8 text-xl">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.</p>
                 <a class="btn btn-lg btn-tertiary w-full sm:w-max text-3xl underline" href="/login">Try it out!</a> <!--TODO Href to actual swiping page if already signed in-->
             </div>
         </div>
     </div>
 </section>
-<section class="py-16 bg-bright-bg text-dark-text lg:py-32">
+<section class="py-16 bg-bright_bg text-dark_text lg:py-32">
     <div class="container ml-5 ">
         <div class="row gap-y-16">
             <div class="col md:w-4/12">
@@ -80,8 +80,8 @@
                 <div class="mb-12">
                     <div class="w-90 h-14  rounded-lg rounded-bl-xl relative">
                         <div class="hwwbutholder">
-                            <button id="howweworkbutton" class="w-36 h-10 border-dark-text border-2 bg-dark-bg text-bright-text absolute top-0 right-0 rounded-bl-lg rounded-tr-lg flex justify-center items-center line-clamp-2 text-right group p-0 font-medium" onclick="togglehowwework()">Read more...</button>
-                            <button id="howweworkbutton2" class="w-36 h-10 border-dark-text border-2 bg-dark-bg text-bright-text absolute top-0 right-0 rounded-bl-lg rounded-tr-lg flex justify-center items-center line-clamp-2 hidden text-right group p-0 font-medium" onclick="togglehowwework()">Read less...</button>
+                            <button id="howweworkbutton" class="w-36 h-10 border-dark_text border-2 bg-dark_bg text-bright_text absolute top-0 right-0 rounded-bl-lg rounded-tr-lg flex justify-center items-center line-clamp-2 text-right group p-0 font-medium" onclick="togglehowwework()">Read more...</button>
+                            <button id="howweworkbutton2" class="w-36 h-10 border-dark_text border-2 bg-dark_bg text-bright_text absolute top-0 right-0 rounded-bl-lg rounded-tr-lg flex justify-center items-center line-clamp-2 hidden text-right group p-0 font-medium" onclick="togglehowwework()">Read less...</button>
                             <script>
                                 function togglehowwework() {
                                   var textElement = document.getElementById("howwework");
@@ -102,8 +102,8 @@
                 <div class="mb-12">
                     <div class="w-90 h-14  rounded-lg rounded-bl-xl relative">
                         <div class="msrmbutholder">
-                            <button id="measurmentbutton" class="w-36 h-10 border-2 border-dark-text bg-dark-bg text-bright-text absolute top-0 right-0 rounded-bl-lg rounded-tr-lg flex justify-center items-center line-clamp-2 text-right group p-0 font-medium" onclick="togglemeasurment()">Read more...</button>
-                            <button id="measurmentbutton2" class="w-36 h-10 bg-dark-bg border-2 text-bright-text absolute top-0 right-0 rounded-bl-lg rounded-tr-lg border-dark-text flex justify-center items-center line-clamp-2 hidden text-right group p-0 font-medium" onclick="togglemeasurment()">Read less...</button>
+                            <button id="measurmentbutton" class="w-36 h-10 border-2 border-dark_text bg-dark_bg text-bright_text absolute top-0 right-0 rounded-bl-lg rounded-tr-lg flex justify-center items-center line-clamp-2 text-right group p-0 font-medium" onclick="togglemeasurment()">Read more...</button>
+                            <button id="measurmentbutton2" class="w-36 h-10 bg-dark_bg border-2 text-bright_text absolute top-0 right-0 rounded-bl-lg rounded-tr-lg border-dark_text flex justify-center items-center line-clamp-2 hidden text-right group p-0 font-medium" onclick="togglemeasurment()">Read less...</button>
                             <script>
                                 function togglemeasurment() {
                                   var textElement = document.getElementById("measurment");
@@ -124,8 +124,8 @@
                 <div class="mb-12">
                     <div class="w-90 h-14  rounded-lg rounded-bl-xl relative">
                         <div class="msrmbutholder">
-                            <button id="algorythmbutton" class="w-36 h-10 border-2 border-dark-text bg-dark-bg text-bright-text absolute top-0 right-0 rounded-bl-lg rounded-tr-lg flex justify-center items-center line-clamp-2 text-right group p-0 font-medium" onclick="togglealgorythm()">Read more...</button>
-                            <button id="algorythmbutton2" class="w-36 border-dark-text h-10 border-2 bg-dark-bg text-bright-text absolute top-0 right-0 rounded-bl-lg rounded-tr-lg flex justify-center items-center line-clamp-2 hidden text-right group p-0 font-medium" onclick="togglealgorythm()">Read less...</button>
+                            <button id="algorythmbutton" class="w-36 h-10 border-2 border-dark_text bg-dark_bg text-bright_text absolute top-0 right-0 rounded-bl-lg rounded-tr-lg flex justify-center items-center line-clamp-2 text-right group p-0 font-medium" onclick="togglealgorythm()">Read more...</button>
+                            <button id="algorythmbutton2" class="w-36 border-dark_text h-10 border-2 bg-dark_bg text-bright_text absolute top-0 right-0 rounded-bl-lg rounded-tr-lg flex justify-center items-center line-clamp-2 hidden text-right group p-0 font-medium" onclick="togglealgorythm()">Read less...</button>
                             <script>
                                 function togglealgorythm() {
                                   var textElement = document.getElementById("algorythm");
@@ -146,8 +146,8 @@
                 <div class="mb-12">
                     <div class="w-90 h-14  rounded-lg rounded-bl-xl relative">
                         <div class="msrmbutholder">
-                            <button id="setinformhomebutton" class="w-36 h-10 bg-dark-bg border-2 text-bright-text absolute top-0 right-0 border-dark-text rounded-bl-lg rounded-tr-lg flex justify-center items-center line-clamp-2 text-right group p-0 font-medium" onclick="togglesetinformhome()">Read more...</button>
-                            <button id="setinformhomebutton2" class="w-36 h-10 bg-dark-bg border-2 border-dark-text text-bright-text absolute top-0 right-0 rounded-bl-lg rounded-tr-lg flex justify-center items-center line-clamp-2 hidden text-right group p-0 font-medium" onclick="togglesetinformhome()">Read less...</button>
+                            <button id="setinformhomebutton" class="w-36 h-10 bg-dark_bg border-2 text-bright_text absolute top-0 right-0 border-dark_text rounded-bl-lg rounded-tr-lg flex justify-center items-center line-clamp-2 text-right group p-0 font-medium" onclick="togglesetinformhome()">Read more...</button>
+                            <button id="setinformhomebutton2" class="w-36 h-10 bg-dark_bg border-2 border-dark_text text-bright_text absolute top-0 right-0 rounded-bl-lg rounded-tr-lg flex justify-center items-center line-clamp-2 hidden text-right group p-0 font-medium" onclick="togglesetinformhome()">Read less...</button>
                             <script>
                                 function togglesetinformhome() {
                                   var textElement = document.getElementById("setinformhome");
@@ -166,10 +166,10 @@
                 
             
                 <div class="mb-12">
-                    <div class="w-90 h-14 border-dark-text rounded-lg rounded-bl-xl relative">
+                    <div class="w-90 h-14 border-dark_text rounded-lg rounded-bl-xl relative">
                         <div class="msrmbutholder">
-                            <button id="discountinfobutton" class="w-36 h-10 border-2 border-dark-text bg-dark-bg text-bright-text absolute top-0 right-0 rounded-bl-lg rounded-tr-lg flex justify-center items-center line-clamp-2 text-right group p-0 font-medium" onclick="togglediscountinfo()">Read more...</button>
-                            <button id="discountinfobutton2" class="w-36 h-10 border-dark-text bg-dark-bg text-bright-text absolute top-0 right-0 rounded-bl-lg rounded-tr-lg border-2 flex justify-center items-center line-clamp-2 hidden text-right group p-0 font-medium" onclick="togglediscountinfo()">Read less...</button>
+                            <button id="discountinfobutton" class="w-36 h-10 border-2 border-dark_text bg-dark_bg text-bright_text absolute top-0 right-0 rounded-bl-lg rounded-tr-lg flex justify-center items-center line-clamp-2 text-right group p-0 font-medium" onclick="togglediscountinfo()">Read more...</button>
+                            <button id="discountinfobutton2" class="w-36 h-10 border-dark_text bg-dark_bg text-bright_text absolute top-0 right-0 rounded-bl-lg rounded-tr-lg border-2 flex justify-center items-center line-clamp-2 hidden text-right group p-0 font-medium" onclick="togglediscountinfo()">Read less...</button>
                             <script>
                                 function togglediscountinfo() {
                                   var textElement = document.getElementById("discountinfo");
@@ -189,7 +189,7 @@
 </section>
 
 
-<section class="py-16 bg-bright-bg text-dark-text">
+<section class="py-16 bg-bright_bg text-dark_text">
     <div class="container">
         <div class="row">
             <div class="col relative">
@@ -225,41 +225,41 @@
         </div>
     </div>
 </section>
-<section class="py-16 bg-bright-bg lg:py-32">
+<section class="py-16 bg-bright_bg lg:py-32">
     <div class="container">
         <div class="row">
             <div class="col">
                 <div class="max-w-[36rem] mx-auto text-center mb-6 md:mb-10 lg:md-12">
-                    <p class="mb-4 text-dark-text">Features</p>
-                    <h2 class="h2 mb-4 text-dark-text">Design that solves problems, one product at a time</h2>
+                    <p class="mb-4 text-dark_text">Features</p>
+                    <h2 class="h2 mb-4 text-dark_text">Design that solves problems, one product at a time</h2>
                 </div>
-                <div class="grid grid-cols-1 text-bright-text md:grid-cols-2 lg:grid-cols-3 gap-x-6 gap-y-6">
-                    <div class="bg-dark-bg p-6 md:px-12 md:py-8">
+                <div class="grid grid-cols-1 text-bright_text md:grid-cols-2 lg:grid-cols-3 gap-x-6 gap-y-6">
+                    <div class="bg-dark_bg p-6 md:px-12 md:py-8">
                         <img class="mb-4" src="https://d1pnnwteuly8z3.cloudfront.net/images/dafc1e05-b0e8-4c6d-b375-4a62333bbd5a/b3bfff48-7942-4103-b866-62c401cab00b.svg" width="32" height="28" alt="" />
                         <h3 class="h5 font-medium">Get everything in one place</h3>
                         <p class="text-muted">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
                     </div>
-                    <div class="bg-dark-bg p-6 md:px-12 md:py-8">
+                    <div class="bg-dark_bg p-6 md:px-12 md:py-8">
                         <img class="mb-4" src="https://d1pnnwteuly8z3.cloudfront.net/images/dafc1e05-b0e8-4c6d-b375-4a62333bbd5a/aa566fc9-af17-4ce7-b1f6-beabfb16b6ff.svg" alt="" width="32" height="32" />
                         <h3 class="h5 font-medium">Easy sizing</h3>
                         <p class="text-muted">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
                     </div>
-                    <div class="bg-dark-bg p-6 md:px-12 md:py-8">
+                    <div class="bg-dark_bg p-6 md:px-12 md:py-8">
                         <img class="mb-4" src="https://d1pnnwteuly8z3.cloudfront.net/images/dafc1e05-b0e8-4c6d-b375-4a62333bbd5a/9ceb8efb-9d33-4930-bddb-8e63c3d5a33e.svg" alt="" width="35" height="35" />
                         <h3 class="h5 font-medium">Steep discounts</h3>
                         <p class="text-muted">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
                     </div>
-                    <div class="bg-dark-bg p-6 md:px-12 md:py-8">
+                    <div class="bg-dark_bg p-6 md:px-12 md:py-8">
                         <img class="mb-4" src="https://d1pnnwteuly8z3.cloudfront.net/images/dafc1e05-b0e8-4c6d-b375-4a62333bbd5a/919c7416-bcd6-4e10-bf9d-2233a9c63289.svg" alt="" width="35" height="35" />
                         <h3 class="h5 font-medium">AI Style advisor</h3>
                         <p class="text-muted">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
                     </div>
-                    <div class="bg-dark-bg p-6 md:px-12 md:py-8">
+                    <div class="bg-dark_bg p-6 md:px-12 md:py-8">
                         <img class="mb-4" src="https://d1pnnwteuly8z3.cloudfront.net/images/dafc1e05-b0e8-4c6d-b375-4a62333bbd5a/aa566fc9-af17-4ce7-b1f6-beabfb16b6ff.svg" alt="" width="32" height="32" />
                         <h3 class="h5 font-medium">No more wasted time</h3>
                         <p class="text-muted">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
                     </div>
-                    <div class="bg-dark-bg p-6 md:px-12 md:py-8">
+                    <div class="bg-dark_bg p-6 md:px-12 md:py-8">
                         <img class="mb-4" src="https://d1pnnwteuly8z3.cloudfront.net/images/dafc1e05-b0e8-4c6d-b375-4a62333bbd5a/9409090c-4977-435d-8a41-8edaef1a8cb4.svg" alt="" width="34" height="34" />
                         <h3 class="h5 font-medium">Ease of use</h3>
                         <p class="text-muted">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
@@ -269,7 +269,7 @@
         </div>
     </div>
 </section>
-<section class="py-16 bg-bright-bg text-lg text-dark-text lg:py-32">
+<section class="py-16 bg-bright_bg text-lg text-dark_text lg:py-32">
     <div class="container">
         <div class="row gap-y-12">
             <div class="col md:w-4/12">
@@ -362,7 +362,7 @@
         </div>
     </div>
 </section>
-<footer class=" pt-5 lg:pt-10 bg-dark-bg text-bright-text" id="footer">
+<footer class=" pt-5 lg:pt-10 bg-dark_bg text-bright_text" id="footer">
     <div class="container ">
         <div class="row">
             <div class="col w-6/12 ml-5">
