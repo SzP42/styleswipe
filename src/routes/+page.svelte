@@ -1,8 +1,13 @@
 <script>
 	import { goto } from "$app/navigation";
-	import { supabase } from "$lib/supabaseClient.js";
-	import { onMount } from "svelte";
-	import "../app.css";
+    import { onMount } from "svelte";
+    import "../app.css"
+    export let data
+    const { supabase } = data
+    onMount( async () => {
+        const { data, error } = await supabase.auth.getSession()
+        if (data['session']) {goto('/app')}
+    })
 </script>
 
 <nav class="navbar text-right right-10 fixed top-5 navbar-dark bg-transparent" id="navbar">
