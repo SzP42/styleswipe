@@ -4,6 +4,7 @@
 	import type { CardData, Direction } from '.';
 	import Card from './Card.svelte';
 	import { currentSetId } from '../stores'
+    import { goto } from '$app/navigation'
 
 	import { createEventDispatcher } from 'svelte';
 
@@ -148,12 +149,15 @@
 		<svelte:component this={Card} bind:element={card1} {...card1Data} />
 		<svelte:component this={Card} bind:element={card2} {...card2Data} />
 	</div>
-	<div class="grid grid-cols-2 w-5/6 h-20 mt-10">
+	<div class="grid grid-cols-3 w-5/6 h-20 mt-10">
 		<div class="flex justify-start">
-			<button on:click={() => {swipe("left")}} class="bg-input_bg hover:bg-special_state_bg text-4xl rounded-full w-20">👎</button>
+			<button on:click={() => {swipe("left")}} class="bg-input_bg hover:bg-special_state_bg text-4xl rounded-full w-20">❌</button>
+		</div>
+		<div class="flex justify-center">
+			<button on:click={() => {goto(`set/${$currentSetId}`)}} class="bg-input_bg hover:bg-special_state_bg text-4xl rounded-full w-20">✨</button>
 		</div>
 		<div class="flex justify-end">
-			<button on:click={() => {swipe("right")}} class="bg-input_bg hover:bg-special_state_bg text-4xl rounded-full w-20">👍</button>
+			<button on:click={() => {swipe("right")}} class="bg-input_bg hover:bg-special_state_bg text-4xl rounded-full w-20">❤️</button>
 		</div>
 	</div>
 </div>
