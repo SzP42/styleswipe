@@ -58,7 +58,7 @@
           </script>
     </div>
 </nav>
-<section class="py-16 bg-bright_bg align-middle lg:py-32">
+<section class="py-16 bg-bright_bg align-middle  lg:py-32">
     <div class="container">
         <div class="row gap-y-12">
             <div class="ml-5 col lg:w-6/12 text-dark_text">
@@ -233,7 +233,7 @@
                     <p class="mb-4 text-dark_text">Features</p>
                     <h2 class="h2 mb-4 text-dark_text">Design that solves problems, one product at a time</h2>
                 </div>
-                <div class="grid grid-cols-1 text-bright_text md:grid-cols-2 lg:grid-cols-3 gap-x-6 gap-y-6">
+                <div class="grid grid-cols-1 ml-5 text-bright_text md:grid-cols-2 lg:grid-cols-3 gap-x-6 gap-y-6">
                     <div class="bg-dark_bg p-6 md:px-12 md:py-8">
                         <img class="mb-4" src="https://d1pnnwteuly8z3.cloudfront.net/images/dafc1e05-b0e8-4c6d-b375-4a62333bbd5a/b3bfff48-7942-4103-b866-62c401cab00b.svg" width="32" height="28" alt="" />
                         <h3 class="h5 font-medium">Get everything in one place</h3>
@@ -270,7 +270,7 @@
     </div>
 </section>
 <section class="py-16 bg-bright_bg text-lg text-dark_text lg:py-32">
-    <div class="container">
+    <div class="container ml-5">
         <div class="row gap-y-12">
             <div class="col md:w-4/12">
                 <h2 class="h3 text-2xl mb-4">Frequently asked questions:</h2>
