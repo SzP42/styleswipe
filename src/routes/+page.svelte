@@ -10,44 +10,51 @@
     })
 </script>
 
-<nav class="navbar text-right right-10 fixed top-5 navbar-dark bg-transparent" id="navbar">
-    <div class="container relative">
-        <div class="pr-0 mr-0 right-0">
-            <img src="images/stsw_transparent-dark.png" alt="Style Swipe" class="w-64 h-16 object-cover object-right"> <!--TODO change this to the logo, add href to home page-->
+<nav class="navbar pt-5 z-50 top-0 border-b-2 border-black items-center sticky navbar-dark bg-[#dcbaa4]" id="navbar"> <!--Navigation Bar-->
+    <div class="">
+        <div class="flex items-center justify-between">
+            <button class="navbar-btn pl-6" onclick="toggleVisibility()" data-toggle="collapse" data-target="#navbar-row" aria-expanded="false" aria-label="Toggle navigation">
+                <svg class="block h-10 w-10 fill-current" viewBox="2 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                    <title>Mobile menu</title>
+                    <path d="M0 4h20v1H0V4zm0 6h20v1H0v-1zm0 6h20v1H0v-1z"></path>
+                </svg>
+            </button>
+            <div class="flex-grow flex justify-center">
+                <a href="/">
+                    <img src="images/stsw_transparent-dark.png" alt="Style Swipe" class="mb-4 w-64 h-16 object-cover object-center border-4 rounded-lg border-dark_text">
+                </a>
+            </div>
+            <div class="w-12"></div> <!-- This empty div balances the layout -->
         </div>
-        <button class="navbar-btn" onclick="toggleVisibility()" data-toggle="collapse" data-target="#navbar-row" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="block h-3 rounded-full bg-transparent"></span>
-            <span class="not-sr-only underline font-normal text-lg pr-6">Open navbar menu</span>
-            <span class="block h-3 rounded-full bg-transparent"></span>
-        </button>
-        <div class="navbar-row hidden pr-6" id="navbar-row">
+        
+        <div class="navbar-row hidden pr-6 pl-6" id="navbar-row">
             <ul class="navbar-col">
                 <li>
                     
                     
-                <span class="block h-1 rounded-full bg-bright_bg"></span><a class="nav-link" href="#">Home</a>
-                    <span class="block h-1 rounded-full bg-bright_bg"></span>
+                <span class="block h-1 rounded-full bg-transparent"></span><a class="nav-link" href="/">Home</a>
+                    <span class="block h-1 rounded-full bg-transparent"></span>
                 </li>
                 <li>
                     
-                <span class="block h-1 rounded-full bg-bright_bg"></span><a class="nav-link" href="#">About us</a>
-                    <span class="block h-1 rounded-full bg-bright_bg"></span>
+                <span class="block h-1 rounded-full bg-transparent"></span><a class="nav-link" href="#">About us</a>
+                    <span class="block h-1 rounded-full bg-transparent"></span>
                 </li>
                 <li>
                     
-                <span class="block h-1 rounded-full bg-bright_bg"></span><a class="nav-link" href="#">Founders</a>
-                    <span class="block h-1 rounded-full bg-bright_bg"></span>
+                <span class="block h-1 rounded-full bg-transparent"></span><a class="nav-link" href="#">Founders</a>
+                    <span class="block h-1 rounded-full bg-transparent"></span>
                 </li>
                 <li>
                     
-                <span class="block h-1 rounded-full bg-bright_bg"></span><a class="nav-link" href="#">Contact us</a>
-                    <span class="block h-1 rounded-full bg-bright_bg"></span>
+                <span class="block h-1 rounded-full bg-transparent"></span><a class="nav-link" href="#">Contact us</a>
+                    <span class="block h-1 rounded-full bg-transparent"></span>
                 </li>
-                <span class="block h-3 rounded-full bg-bright_bg"></span>
+                <span class="block h-3 rounded-full bg-transparent"></span>
                 <li>
-                    <a class="btn text-dark_text bg-bright_bg btn-outline btn-lg font-medium capitalize border-2 border-dark_text rounded-lg p-1 hover:text-bright_text hover:bg-dark_bg text-lg" href="/login">Get Started</a>
-            </li>
-            <span class="block h-1 rounded-full bg-bright_bg"></span>
+                    <a class="btn text-dark_text btn-outline  btn-lg font-medium capitalize border-2 border-dark_text rounded-lg p-1 hover:text-bright_text hover:bg-dark_bg text-lg" href="/login">Get Started</a>
+                </li>
+                <span class="block h-3 rounded-full "></span>
             </ul>
         </div>
         <script>
@@ -58,138 +65,94 @@
           </script>
     </div>
 </nav>
-<section class="py-16 bg-bright_bg align-middle  lg:py-32">
+<section class="py-16 bg-bright_bg justify-center flex text-center lg:py-32"> <!--Call to action-->
     <div class="container">
         <div class="row gap-y-12">
-            <div class="ml-5 col lg:w-6/12 text-dark_text">
+            <div class="text-dark_text">
                 <h1 class="mb-8 text-dark_text text-3xl">Find your dream outfits just by swiping!</h1>
                 <p class="mb-8 text-xl">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.</p>
-                <a class="btn btn-lg btn-tertiary w-full sm:w-max text-3xl underline" href="/login">Try it out!</a> <!--TODO Href to actual swiping page if already signed in-->
+                <a class="btn btn-lg btn-tertiary w-full sm:w-max text-3xl underline" href="/login"><button class="border-2 border-black rounded-full bg-bright_bg text-dark_text hover:bg-dark_bg hover:text-bright_text p-2">Find your style!</button></a> <!--TODO Href to actual swiping page if already signed in-->
             </div>
         </div>
     </div>
 </section>
-<section class="py-16 bg-bright_bg text-dark_text lg:py-32">
-    <div class="container ml-5 ">
-        <div class="row gap-y-16">
+<section class="py-16 bg-bright_bg text-dark_text lg:py-32"> <!--About us-->
+    <div class="container ml-5">
+        <div class="grid grid-cols-2 align-middle ml-5 text-center text-dark_text md:grid-cols-3 lg:grid-cols-3 gap-x-6 gap-y-6">
             <div class="col md:w-4/12">
-                <h2 class="h2 text-2xl font-semibold mb-4" >How we work</h2>
-                <p class="line-clamp-2 mb-4 text-muted"id="howwework">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.</p>
+                <h2 class="h2 text-2xl font-semibold mb-4 " >How we work</h2>
+                <button onclick="togglehowwework()"><p class="line-clamp-2 mb-4 text-muted border-2 border-black rounded-full bg-bright_bg text-dark_text hover:bg-dark_bg hover:text-bright_text p-2" id="howwework">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.</p></button>
             </div>
+                <script>
+                    function togglehowwework() {
+                      var textElement = document.getElementById("howwework");
+                      textElement.classList.toggle("line-clamp-2");
+                    }
+                </script>
+
             <div class="col md:w-4/12">
-                <div class="mb-12">
-                    <div class="w-90 h-14  rounded-lg rounded-bl-xl relative">
-                        <div class="hwwbutholder">
-                            <button id="howweworkbutton" class="w-36 h-10 border-dark_text border-2 bg-dark_bg text-bright_text absolute top-0 right-0 rounded-bl-lg rounded-tr-lg flex justify-center items-center line-clamp-2 text-right group p-0 font-medium" onclick="togglehowwework()">Read more...</button>
-                            <button id="howweworkbutton2" class="w-36 h-10 border-dark_text border-2 bg-dark_bg text-bright_text absolute top-0 right-0 rounded-bl-lg rounded-tr-lg flex justify-center items-center line-clamp-2 hidden text-right group p-0 font-medium" onclick="togglehowwework()">Read less...</button>
-                            <script>
-                                function togglehowwework() {
-                                  var textElement = document.getElementById("howwework");
-                                  textElement.classList.toggle("line-clamp-2");
-                                  var buttonElement = document.getElementById("howweworkbutton");
-                                  buttonElement.classList.toggle("hidden");
-                                  var buttonElement = document.getElementById("howweworkbutton2");
-                                  buttonElement.classList.toggle("hidden");
-                                }
-                              </script>
-                        </div>
-                    </div>
-                </div>
                 <h2 class="h2 text-2xl font-semibold mb-4" >Measurments</h2>
-                <p class="text-muted line-clamp-2 mb-4" id="measurment">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.</p>
-                
-            
-                <div class="mb-12">
-                    <div class="w-90 h-14  rounded-lg rounded-bl-xl relative">
-                        <div class="msrmbutholder">
-                            <button id="measurmentbutton" class="w-36 h-10 border-2 border-dark_text bg-dark_bg text-bright_text absolute top-0 right-0 rounded-bl-lg rounded-tr-lg flex justify-center items-center line-clamp-2 text-right group p-0 font-medium" onclick="togglemeasurment()">Read more...</button>
-                            <button id="measurmentbutton2" class="w-36 h-10 bg-dark_bg border-2 text-bright_text absolute top-0 right-0 rounded-bl-lg rounded-tr-lg border-dark_text flex justify-center items-center line-clamp-2 hidden text-right group p-0 font-medium" onclick="togglemeasurment()">Read less...</button>
-                            <script>
-                                function togglemeasurment() {
-                                  var textElement = document.getElementById("measurment");
-                                  textElement.classList.toggle("line-clamp-2");
-                                  var buttonElement = document.getElementById("measurmentbutton");
-                                  buttonElement.classList.toggle("hidden");
-                                  var buttonElement = document.getElementById("measurmentbutton2");
-                                  buttonElement.classList.toggle("hidden");
-                                }
-                              </script>
-                        </div>
-                    </div>
-                </div>
-                <h2 class="h2 text-2xl font-semibold mb-4" >Algorythm</h2>
-                <p class="text-muted line-clamp-2 mb-4" id="algorythm">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.</p>
-                
-            
-                <div class="mb-12">
-                    <div class="w-90 h-14  rounded-lg rounded-bl-xl relative">
-                        <div class="msrmbutholder">
-                            <button id="algorythmbutton" class="w-36 h-10 border-2 border-dark_text bg-dark_bg text-bright_text absolute top-0 right-0 rounded-bl-lg rounded-tr-lg flex justify-center items-center line-clamp-2 text-right group p-0 font-medium" onclick="togglealgorythm()">Read more...</button>
-                            <button id="algorythmbutton2" class="w-36 border-dark_text h-10 border-2 bg-dark_bg text-bright_text absolute top-0 right-0 rounded-bl-lg rounded-tr-lg flex justify-center items-center line-clamp-2 hidden text-right group p-0 font-medium" onclick="togglealgorythm()">Read less...</button>
-                            <script>
-                                function togglealgorythm() {
-                                  var textElement = document.getElementById("algorythm");
-                                  textElement.classList.toggle("line-clamp-2");
-                                  var buttonElement = document.getElementById("algorythmbutton");
-                                  buttonElement.classList.toggle("hidden");
-                                  var buttonElement = document.getElementById("algorythmbutton2");
-                                  buttonElement.classList.toggle("hidden");
-                                }
-                              </script>
-                        </div>
-                    </div>
-                </div>
-                <h2 class="h2 text-2xl font-semibold mb-4" >Our sets</h2>
-                <p class="text-muted line-clamp-2 mb-4" id="setinformhome">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.</p>
-                
-            
-                <div class="mb-12">
-                    <div class="w-90 h-14  rounded-lg rounded-bl-xl relative">
-                        <div class="msrmbutholder">
-                            <button id="setinformhomebutton" class="w-36 h-10 bg-dark_bg border-2 text-bright_text absolute top-0 right-0 border-dark_text rounded-bl-lg rounded-tr-lg flex justify-center items-center line-clamp-2 text-right group p-0 font-medium" onclick="togglesetinformhome()">Read more...</button>
-                            <button id="setinformhomebutton2" class="w-36 h-10 bg-dark_bg border-2 border-dark_text text-bright_text absolute top-0 right-0 rounded-bl-lg rounded-tr-lg flex justify-center items-center line-clamp-2 hidden text-right group p-0 font-medium" onclick="togglesetinformhome()">Read less...</button>
-                            <script>
-                                function togglesetinformhome() {
-                                  var textElement = document.getElementById("setinformhome");
-                                  textElement.classList.toggle("line-clamp-2");
-                                  var buttonElement = document.getElementById("setinformhomebutton");
-                                  buttonElement.classList.toggle("hidden");
-                                  var buttonElement = document.getElementById("setinformhomebutton2");
-                                  buttonElement.classList.toggle("hidden");
-                                }
-                              </script>
-                        </div>
-                    </div>
-                </div>
-                <h2 class="h2 text-2xl font-semibold mb-4" >Discounts</h2>
-                <p class="text-muted line-clamp-2 mb-4" id="discountinfo">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.</p>
-                
-            
-                <div class="mb-12">
-                    <div class="w-90 h-14 border-dark_text rounded-lg rounded-bl-xl relative">
-                        <div class="msrmbutholder">
-                            <button id="discountinfobutton" class="w-36 h-10 border-2 border-dark_text bg-dark_bg text-bright_text absolute top-0 right-0 rounded-bl-lg rounded-tr-lg flex justify-center items-center line-clamp-2 text-right group p-0 font-medium" onclick="togglediscountinfo()">Read more...</button>
-                            <button id="discountinfobutton2" class="w-36 h-10 border-dark_text bg-dark_bg text-bright_text absolute top-0 right-0 rounded-bl-lg rounded-tr-lg border-2 flex justify-center items-center line-clamp-2 hidden text-right group p-0 font-medium" onclick="togglediscountinfo()">Read less...</button>
-                            <script>
-                                function togglediscountinfo() {
-                                  var textElement = document.getElementById("discountinfo");
-                                  textElement.classList.toggle("line-clamp-2");
-                                  var buttonElement = document.getElementById("discountinfobutton");
-                                  buttonElement.classList.toggle("hidden");
-                                  var buttonElement = document.getElementById("discountinfobutton2");
-                                  buttonElement.classList.toggle("hidden");
-                                }
-                              </script>
-                        </div>
-                    </div>
-                </div>
+                <button onclick="togglemeasurment()"><p class="line-clamp-2 mb-4 text-muted border-2 border-black rounded-full bg-bright_bg text-dark_text hover:bg-dark_bg hover:text-bright_text p-2" id="measurment">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.</p></button>
             </div>
+                <script>
+                    function togglemeasurment() {
+                        var textElement = document.getElementById("measurment");
+                        textElement.classList.toggle("line-clamp-2");
+                    }
+                </script>
+
+            <div class="col md:w-4/12">
+                <h2 class="h2 text-2xl font-semibold mb-4" >Algorythm</h2>
+                <button onclick="togglealgorythm()"><p class="line-clamp-2 mb-4 text-muted border-2 border-black rounded-full bg-bright_bg text-dark_text hover:bg-dark_bg hover:text-bright_text p-2" id="algorythm">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.</p></button>
+            </div>
+            
+                <script>
+                    function togglealgorythm() {
+                        var textElement = document.getElementById("algorythm");
+                        textElement.classList.toggle("line-clamp-2");
+                    }
+                    </script>
+
+            <div class="col md:w-4/12">
+                <h2 class="h2 text-2xl font-semibold mb-4" >Our sets</h2>
+                <button onclick="togglesetinformhome()"><p class="line-clamp-2 mb-4 text-muted border-2 border-black rounded-full bg-bright_bg text-dark_text hover:bg-dark_bg hover:text-bright_text p-2" id="setinformhome">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.</p></button>
+            </div>
+                <script>
+                    function togglesetinformhome() {
+                        var textElement = document.getElementById("setinformhome");
+                        textElement.classList.toggle("line-clamp-2");
+                    }
+                    </script>
+
+            <div class="col md:w-4/12">
+                <h2 class="h2 text-2xl font-semibold mb-4" >Discounts</h2>
+                <button onclick="togglediscountinfo()"><p class="line-clamp-2 mb-4 text-muted border-2 border-black rounded-full bg-bright_bg text-dark_text hover:bg-dark_bg hover:text-bright_text p-2" id="discountinfo">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.</p></button>
+            </div>
+            
+            <script>
+                function togglediscountinfo() {
+                    var textElement = document.getElementById("discountinfo");
+                    textElement.classList.toggle("line-clamp-2");
+                }
+            </script>
+
+            <div class="col md:w-4/12">
+                <h2 class="h2 text-2xl font-semibold mb-4" >Interface</h2>
+                <button onclick="toggleinterfaceinfo()"><p class="line-clamp-2 mb-4 text-muted border-2 border-black rounded-full bg-bright_bg text-dark_text hover:bg-dark_bg hover:text-bright_text p-2" id="interfaceinfo">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.</p></button>
+            </div>
+
+            <script>
+                function toggleinterfaceinfo() {
+                    var textElement = document.getElementById("interfaceinfo");
+                    textElement.classList.toggle("line-clamp-2");
+                }
+            </script>
         </div>
     </div>
 </section>
 
 
-<section class="py-16 bg-bright_bg text-dark_text">
+<section class="py-16 bg-bright_bg text-dark_text"> <!--Pictures-->
     <div class="container">
         <div class="row">
             <div class="col relative">
@@ -197,7 +160,7 @@
                 <div class="grid grid-cols-3 gap-x-8 gap-y-8">
                     <div class="col-span-3 lg:col-span-2">
                         <div class="block relative group h-full overflow-hidden">
-                            <img class="min-h-full object-cover" src="https://d1pnnwteuly8z3.cloudfront.net/images/a4f01840-cd76-49a6-9d2c-aded32ed05e1/a6926183-4c3d-46bb-9ad1-e34178b3bcf9.webp" loading="lazy" width="1063" height="649" alt="" />
+                            <img class="min-h-full" src="https://d1pnnwteuly8z3.cloudfront.net/images/a4f01840-cd76-49a6-9d2c-aded32ed05e1/a6926183-4c3d-46bb-9ad1-e34178b3bcf9.webp" loading="lazy" width="1063" height="649" alt="" />
                         </div>
                     </div>
                     <div class="col-span-3 lg:col-span-1 flex flex-col gap-y-8">
@@ -225,7 +188,7 @@
         </div>
     </div>
 </section>
-<section class="py-16 bg-bright_bg lg:py-32">
+<section class="py-16 bg-bright_bg lg:py-32"> <!--Features-->
     <div class="container">
         <div class="row">
             <div class="col">
@@ -269,7 +232,7 @@
         </div>
     </div>
 </section>
-<section class="py-16 bg-bright_bg text-lg text-dark_text lg:py-32">
+<section class="py-16 bg-bright_bg text-lg text-dark_text lg:py-32"> <!--FAQ-->
     <div class="container ml-5">
         <div class="row gap-y-12">
             <div class="col md:w-4/12">
@@ -366,7 +329,6 @@
     <div class="container ">
         <div class="row">
             <div class="col w-6/12 ml-5">
-                <a class="navbar-brand mb-12" href="/"></a>
                 <h1 class="text-muted text-3xl"> Reach StyleSwipe:</h1> <!--TODO Change to logo?-->
             </div>
             <div class="col w-6/12 ml-16">  
