@@ -79,7 +79,7 @@
 <section class="py-16 bg-bright_bg text-dark_text lg:py-32"> <!--About us-->
     <div class="container ml-5">
         <div class="grid grid-cols-2 align-middle ml-5 text-center text-dark_text md:grid-cols-3 lg:grid-cols-3 gap-x-6 gap-y-6">
-            <div class="col md:w-4/12">
+            <div class="col">
                 <h2 class="h2 text-2xl font-semibold mb-4 " >How we work</h2>
                 <button onclick="togglehowwework()"><p class="line-clamp-2 mb-4 text-muted border-2 border-black rounded-full bg-bright_bg text-dark_text hover:bg-dark_bg hover:text-bright_text p-2" id="howwework">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.</p></button>
             </div>
@@ -90,7 +90,7 @@
                     }
                 </script>
 
-            <div class="col md:w-4/12">
+            <div class="col">
                 <h2 class="h2 text-2xl font-semibold mb-4" >Measurments</h2>
                 <button onclick="togglemeasurment()"><p class="line-clamp-2 mb-4 text-muted border-2 border-black rounded-full bg-bright_bg text-dark_text hover:bg-dark_bg hover:text-bright_text p-2" id="measurment">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.</p></button>
             </div>
@@ -101,7 +101,7 @@
                     }
                 </script>
 
-            <div class="col md:w-4/12">
+            <div class="col">
                 <h2 class="h2 text-2xl font-semibold mb-4" >Algorythm</h2>
                 <button onclick="togglealgorythm()"><p class="line-clamp-2 mb-4 text-muted border-2 border-black rounded-full bg-bright_bg text-dark_text hover:bg-dark_bg hover:text-bright_text p-2" id="algorythm">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.</p></button>
             </div>
@@ -113,7 +113,7 @@
                     }
                     </script>
 
-            <div class="col md:w-4/12">
+            <div class="col">
                 <h2 class="h2 text-2xl font-semibold mb-4" >Our sets</h2>
                 <button onclick="togglesetinformhome()"><p class="line-clamp-2 mb-4 text-muted border-2 border-black rounded-full bg-bright_bg text-dark_text hover:bg-dark_bg hover:text-bright_text p-2" id="setinformhome">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.</p></button>
             </div>
@@ -124,7 +124,7 @@
                     }
                     </script>
 
-            <div class="col md:w-4/12">
+            <div class="col">
                 <h2 class="h2 text-2xl font-semibold mb-4" >Discounts</h2>
                 <button onclick="togglediscountinfo()"><p class="line-clamp-2 mb-4 text-muted border-2 border-black rounded-full bg-bright_bg text-dark_text hover:bg-dark_bg hover:text-bright_text p-2" id="discountinfo">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.</p></button>
             </div>
@@ -136,7 +136,7 @@
                 }
             </script>
 
-            <div class="col md:w-4/12">
+            <div class="col">
                 <h2 class="h2 text-2xl font-semibold mb-4" >Interface</h2>
                 <button onclick="toggleinterfaceinfo()"><p class="line-clamp-2 mb-4 text-muted border-2 border-black rounded-full bg-bright_bg text-dark_text hover:bg-dark_bg hover:text-bright_text p-2" id="interfaceinfo">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.</p></button>
             </div>
