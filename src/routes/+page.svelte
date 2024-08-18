@@ -77,8 +77,8 @@
     </div>
 </section>
 <section class="py-16 bg-bright_bg text-dark_text lg:py-32"> <!--About us-->
-    <div class="container ml-5">
-        <div class="grid grid-cols-2 align-middle ml-5 text-center text-dark_text md:grid-cols-3 lg:grid-cols-3 gap-x-6 gap-y-6">
+    <div class="flex justify-center items-center">
+        <div class="grid grid-cols-2 align-middle mx-10 text-center gap-x-6 text-dark_text md:grid-cols-3 md:gap-x-10 lg:grid-cols-3 lg:gap-x-16 gap-y-6 xl:gap-x-24 xl:mx-20">
             <div class="col">
                 <h2 class="h2 text-2xl font-semibold mb-4 " >How we work</h2>
                 <button onclick="togglehowwework()"><p class="line-clamp-2 mb-4 text-muted border-2 border-black rounded-full bg-bright_bg text-dark_text hover:bg-dark_bg hover:text-bright_text p-2" id="howwework">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.</p></button>
