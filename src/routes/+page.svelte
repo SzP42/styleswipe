@@ -71,7 +71,7 @@
             <div class="text-dark_text">
                 <h1 class="mb-8 text-dark_text text-3xl">Find your dream outfits just by swiping!</h1>
                 <p class="mb-8 text-xl">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.</p>
-                <a class="btn btn-lg btn-tertiary w-full sm:w-max text-3xl underline" href="/login"><button class="border-2 border-black rounded-full bg-bright_bg text-dark_text hover:bg-dark_bg hover:text-bright_text p-2">Find your style!</button></a> <!--TODO Href to actual swiping page if already signed in-->
+                <a class="btn btn-lg btn-tertiary w-full sm:w-max text-3xl underline" href="/login"><button class="border-2 border-black rounded-xl bg-bright_bg text-dark_text hover:bg-dark_bg hover:text-bright_text p-2">Find your style!</button></a> <!--TODO Href to actual swiping page if already signed in-->
             </div>
         </div>
     </div>
@@ -208,7 +208,7 @@
     <div class="container">
         <div class="row gap-y-12">
             <div class="text-dark_text">
-                <a class="btn btn-lg btn-tertiary w-full sm:w-max text-3xl underline" href="/login"><button class="border-2 border-black rounded-full bg-bright_bg text-dark_text hover:bg-dark_bg hover:text-bright_text px-8 py-4"> Find out! </button></a> <!--TODO Href to actual swiping page if already signed in-->
+                <a class="btn btn-lg btn-tertiary w-full sm:w-max text-3xl underline" href="/login"><button class="border-2 border-black rounded-xl bg-bright_bg text-dark_text hover:bg-dark_bg hover:text-bright_text px-8 py-4"> Find out! </button></a> <!--TODO Href to actual swiping page if already signed in-->
                 <div class="container p-8 lg:pt-16">
                     <div class="flex justify-center items-center align-middle">
                         <div class="w-full max-w-screen-lg mx-auto px-4">
