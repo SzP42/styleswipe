@@ -151,180 +151,82 @@
     </div>
 </section>
 
+<div class="py-16 bg-bright_bg justify-center flex text-center lg:pt-32">
+    <div class="container align-middle flex justify-center text-bright_text">
+        <h1 class="bg-dark_bg text-3xl w-1/3 min-h-20 rounded-xl border-4 border-black flex items-center justify-center">
+            Which one is your wardrobe?
+        </h1>
+    </div>
+</div>
 
-<section class="py-16 bg-bright_bg text-dark_text"> <!--Pictures-->
-    <div class="container">
-        <div class="row">
-            <div class="col relative">
-                <h2 class="text-3xl mb-6 lg:mb-12">Check out some of our sets!</h2>
-                <div class="grid grid-cols-3 gap-x-8 gap-y-8">
-                    <div class="col-span-3 lg:col-span-2">
-                        <div class="block relative group h-full overflow-hidden">
-                            <img class="min-h-full" src="https://d1pnnwteuly8z3.cloudfront.net/images/a4f01840-cd76-49a6-9d2c-aded32ed05e1/a6926183-4c3d-46bb-9ad1-e34178b3bcf9.webp" loading="lazy" width="1063" height="649" alt="" />
-                        </div>
-                    </div>
-                    <div class="col-span-3 lg:col-span-1 flex flex-col gap-y-8">
-                        <div>
-                            <div class="block relative group overflow-hidden">
-                                <img class="" src="https://d1pnnwteuly8z3.cloudfront.net/images/a4f01840-cd76-49a6-9d2c-aded32ed05e1/c00b53a9-f2c3-4001-b159-a3a1620cb641.webp" loading="lazy" width="1062" height="649" alt="" />
-                            </div>
-                        </div>
-                        <div>
-                            <div class="block relative group overflow-hidden">
-                                <img class="" src="https://d1pnnwteuly8z3.cloudfront.net/images/a4f01840-cd76-49a6-9d2c-aded32ed05e1/80f090de-9139-49f4-b94c-bbcbaf562dbb.webp" loading="lazy" width="1062" height="648" alt="" />
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="flex justify-end mt-2 md:mt-8">
-                    <a class="btn group p-0 font-medium" href="/login"> <!--TODO Href to actual swiping page if already signed in-->
-                        <span>View all projects</span>
-                        <svg class="fas w-6 duration-300 ml-3 group-hover:ml-4" width="100%" viewBox="0 0 25 12" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <path d="M24.5303 6.53033C24.8232 6.23744 24.8232 5.76256 24.5303 5.46967L19.7574 0.696699C19.4645 0.403806 18.9896 0.403806 18.6967 0.696699C18.4038 0.989593 18.4038 1.46447 18.6967 1.75736L22.9393 6L18.6967 10.2426C18.4038 10.5355 18.4038 11.0104 18.6967 11.3033C18.9896 11.5962 19.4645 11.5962 19.7574 11.3033L24.5303 6.53033ZM0 6.75H24V5.25H0V6.75Z" fill="currentcolor"></path>
-                        </svg>
-                    </a>
-                </div>
-            </div>
-        </div>
-    </div>
-</section>
-<section class="py-16 bg-bright_bg lg:py-32"> <!--Features-->
-    <div class="container">
-        <div class="row">
+<section class="pb-16 bg-bright_bg text-dark_text lg:pb-32"> <!--Pictures-->
+    <div class="flex justify-center items-center">
+        <div class="grid grid-cols-2 align-middle mx-10 text-center gap-x-7 text-dark_text md:grid-cols-3 md:gap-x-12 lg:grid-cols-3 lg:gap-x-20 gap-y-6 xl:gap-x-30 xl:mx-20">
             <div class="col">
-                <div class="max-w-[36rem] mx-auto text-center mb-6 md:mb-10 lg:md-12">
-                    <p class="mb-4 text-dark_text">Features</p>
-                    <h2 class="h2 mb-4 text-dark_text">Design that solves problems, one product at a time</h2>
-                </div>
-                <div class="grid grid-cols-1 ml-5 text-bright_text md:grid-cols-2 lg:grid-cols-3 gap-x-6 gap-y-6">
-                    <div class="bg-dark_bg p-6 md:px-12 md:py-8">
-                        <img class="mb-4" src="https://d1pnnwteuly8z3.cloudfront.net/images/dafc1e05-b0e8-4c6d-b375-4a62333bbd5a/b3bfff48-7942-4103-b866-62c401cab00b.svg" width="32" height="28" alt="" />
-                        <h3 class="h5 font-medium">Get everything in one place</h3>
-                        <p class="text-muted">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-                    </div>
-                    <div class="bg-dark_bg p-6 md:px-12 md:py-8">
-                        <img class="mb-4" src="https://d1pnnwteuly8z3.cloudfront.net/images/dafc1e05-b0e8-4c6d-b375-4a62333bbd5a/aa566fc9-af17-4ce7-b1f6-beabfb16b6ff.svg" alt="" width="32" height="32" />
-                        <h3 class="h5 font-medium">Easy sizing</h3>
-                        <p class="text-muted">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-                    </div>
-                    <div class="bg-dark_bg p-6 md:px-12 md:py-8">
-                        <img class="mb-4" src="https://d1pnnwteuly8z3.cloudfront.net/images/dafc1e05-b0e8-4c6d-b375-4a62333bbd5a/9ceb8efb-9d33-4930-bddb-8e63c3d5a33e.svg" alt="" width="35" height="35" />
-                        <h3 class="h5 font-medium">Steep discounts</h3>
-                        <p class="text-muted">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-                    </div>
-                    <div class="bg-dark_bg p-6 md:px-12 md:py-8">
-                        <img class="mb-4" src="https://d1pnnwteuly8z3.cloudfront.net/images/dafc1e05-b0e8-4c6d-b375-4a62333bbd5a/919c7416-bcd6-4e10-bf9d-2233a9c63289.svg" alt="" width="35" height="35" />
-                        <h3 class="h5 font-medium">AI Style advisor</h3>
-                        <p class="text-muted">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-                    </div>
-                    <div class="bg-dark_bg p-6 md:px-12 md:py-8">
-                        <img class="mb-4" src="https://d1pnnwteuly8z3.cloudfront.net/images/dafc1e05-b0e8-4c6d-b375-4a62333bbd5a/aa566fc9-af17-4ce7-b1f6-beabfb16b6ff.svg" alt="" width="32" height="32" />
-                        <h3 class="h5 font-medium">No more wasted time</h3>
-                        <p class="text-muted">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-                    </div>
-                    <div class="bg-dark_bg p-6 md:px-12 md:py-8">
-                        <img class="mb-4" src="https://d1pnnwteuly8z3.cloudfront.net/images/dafc1e05-b0e8-4c6d-b375-4a62333bbd5a/9409090c-4977-435d-8a41-8edaef1a8cb4.svg" alt="" width="34" height="34" />
-                        <h3 class="h5 font-medium">Ease of use</h3>
-                        <p class="text-muted">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-                    </div>
-                </div>
-            </div>
+                <h2 class="h2 text-2xl font-semibold mb-4 " >Old money</h2>
+                <img src="images/Old_Money_Pic.jpg" alt="Old Money set" class="rounded-3xl border-2 border-black">
+                 </div>
+
+            <div class="col">
+                <h2 class="h2 text-2xl font-semibold mb-4" >Elegant</h2>
+                <img src="images/Elegant_Pic.jpg" alt="Elegant set" class="rounded-3xl border-2 border-black">
+                 </div>
+                
+
+            <div class="col">
+                <h2 class="h2 text-2xl font-semibold mb-4" >Soft boy</h2>
+                <img src="images/Soft_Boy_Pic.jpg" alt="Soft boy set" class="rounded-3xl border-2 border-black">
+                  </div>
+            
+
+            <div class="col">
+                <h2 class="h2 text-2xl font-semibold mb-4" >Skater</h2>
+                <img src="images/Skater_Pic.jpeg" alt="Skater set" class="rounded-3xl border-2 border-black">
+                   </div>
+                
+
+            <div class="col">
+                <h2 class="h2 text-2xl font-semibold mb-4" >Solid</h2>
+                <img src="images/Solid_Pic.jpg" alt="Solid set" class="rounded-3xl border-2 border-black">
+                  </div>
+            
+            
+
+            <div class="col">
+                <h2 class="h2 text-2xl font-semibold mb-4" >Streetwear</h2>
+                <img src="images/Streetwear_Pic.jpg" alt="Streetwear set" class="rounded-3xl border-2 border-black">
+              </div>
+
+            
         </div>
+        
+           
     </div>
+    
 </section>
-<section class="py-16 bg-bright_bg text-lg text-dark_text lg:py-32"> <!--FAQ-->
-    <div class="container ml-5">
+<section class=" bg-bright_bg justify-center flex text-center pb-16 lg:pb-32"> <!--Call to action again-->
+    <div class="container">
         <div class="row gap-y-12">
-            <div class="col md:w-4/12">
-                <h2 class="h3 text-2xl mb-4">Frequently asked questions:</h2>
-            </div>
-            <div class="col">
-                <div class="accordion">
-                    <div class="accordion-item">
-                        <button class="accordion-header" onclick="toggleq1()" aria-expanded="false">
-                            <span class="w-8 md:mr-8 text-secondary">01</span> Kerdes1
-                        </button>
-                        <div id="q1" class="accordion-collapse hidden">
-                            <div class="accordion-body md:ml-16">
-                                <p class="text-muted mb-0">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+            <div class="text-dark_text">
+                <a class="btn btn-lg btn-tertiary w-full sm:w-max text-5xl underline" href="/login"><button class="border-2 border-black rounded-full bg-bright_bg text-dark_text hover:bg-dark_bg hover:text-bright_text py-2 px-4"> Find out! </button></a> <!--TODO Href to actual swiping page if already signed in-->
+                <div class="container p-8 lg:pt-16">
+                    <div class="flex justify-center items-center align-middle">
+                        <div class="w-full max-w-screen-lg mx-auto px-4">
+                            <div class="bg-dark_bg text-bright_text rounded-lg px-4 lg:px-8 py-1 w-full md:w-8/12 mx-auto border-double border-8 border-black">
+                                <h1 class="my-8 text-bright_text text-2xl text-center">
+                                Don't waste time with shopping, get the full set designed for you!
+                                </h1>
                             </div>
                         </div>
                     </div>
-                    <script>
-                        function toggleq1() {
-                          var buttonElement = document.getElementById("q1");
-                          buttonElement.classList.toggle("hidden");
-                        }
-                      </script>
-                    <div class="accordion-item">
-                        <button class="accordion-header" onclick="toggleq2()" aria-expanded="false">
-                            <span class="w-8 md:mr-8 text-secondary">02</span> Kerdes2
-                        </button>
-                        <div id="q2" class="accordion-collapse hidden">
-                            <div class="accordion-body md:ml-16">
-                                <p class="text-muted mb-0">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-                            </div>
-                        </div>
-                    </div>
-                    <script>
-                        function toggleq2() {
-                          var buttonElement = document.getElementById("q2");
-                          buttonElement.classList.toggle("hidden");
-                        }
-                      </script>
-                    <div class="accordion-item">
-                        <button class="accordion-header" onclick="toggleq3()" aria-expanded="false">
-                            <span class="w-8 md:mr-8 text-secondary">03</span> Kerdes3
-                        </button>
-                        <div class="accordion-collapse hidden"id="q3">
-                            <div class="accordion-body md:ml-16">
-                                <p class="text-muted mb-0">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-                            </div>
-                        </div>
-                    </div>
-                    <script>
-                        function toggleq3() {
-                          var buttonElement = document.getElementById("q3");
-                          buttonElement.classList.toggle("hidden");
-                        }
-                      </script>
-                    <div class="accordion-item">
-                        <button class="accordion-header" onclick="toggleq4()" aria-expanded="false">
-                            <span class="w-8 md:mr-8 text-secondary">04</span> Kerdes4
-                        </button>
-                        <div class="accordion-collapse hidden" id="q4">
-                            <div class="accordion-body md:ml-16">
-                                <p class="text-muted mb-0">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-                            </div>
-                        </div>
-                    </div>
-                    <script>
-                        function toggleq4() {
-                          var buttonElement = document.getElementById("q4");
-                          buttonElement.classList.toggle("hidden");
-                        }
-                      </script>
-                    <div class="accordion-item">
-                        <button class="accordion-header" onclick="toggleq5()" aria-expanded="false">
-                            <span class="w-8 md:mr-8 text-secondary">05</span> Kerdes4
-                        </button>
-                        <div class="accordion-collapse hidden" id="q5">
-                            <div class="accordion-body md:ml-16">
-                                <p class="text-muted mb-0">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-                            </div>
-                        </div>
-                    </div>
-                    <script>
-                        function toggleq5() {
-                          var buttonElement = document.getElementById("q5");
-                          buttonElement.classList.toggle("hidden");
-                        }
-                      </script>
                 </div>
             </div>
         </div>
     </div>
+    
 </section>
+
+
 <footer class=" pt-5 lg:pt-10 bg-dark_bg text-bright_text" id="footer">
     <div class="container ">
         <div class="row">
