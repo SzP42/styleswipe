@@ -233,7 +233,7 @@
                 <div class="container pb-8 pt-6">
                     <div class="flex">
                         <div class="w-full max-w-screen-lg mx-auto px-4">
-                            <div class="bg-dark_bg text-bright_text rounded-3xl px-4 lg:px-8 py-1  w-6/12 mx-auto border-4 border-black">
+                            <div class="bg-dark_bg text-bright_text rounded-3xl px-4 lg:px-8 py-1 w-8/12 md:w-6/12 mx-auto border-4 border-black">
                                 <h1 class="mb-8 text-bright_text text-md lg:text-2xl text-center">
                                     2nd place on Startup Challenge by
                                 </h1>
@@ -252,7 +252,7 @@
 </section>
 
 
-<footer class=" pt-5 lg:pt-10 bg-dark_bg text-bright_text" id="footer">
+<footer class=" pt-5 lg:pt-10 bg-dark_bg text-bright_text" id="footer"> 
     <div class="container ">
         <div class="row">
             <div class="col w-6/12 ml-5">
@@ -261,16 +261,16 @@
             <div class="col w-6/12 ml-16">  
                 <div class="gap-4">
                     <div><a href="https://facebook.com"target="_blank">
-                        <i class="text-2xl">Facebook</i>
+                        <i class="text-2xl underline">Facebook</i>
                     </a></div>
                     <div><a href="https://twitter.com" target="_blank">
-                        <i class="text-2xl fab fa-twitter">Twitter</i>
+                        <i class="text-2xl fab fa-twitter underline">Twitter</i>
                     </a></div>
                     <div><a href="https://instagram.com" target="_blank">
-                        <i class="text-2xl fab fa-instagram fa-3x">Instagram</i>
+                        <i class="text-2xl fab fa-instagram fa-3x underline">Instagram</i>
                     </a></div>
                     <div><a href="https://linkedin.com" target="_blank">
-                        <i class="text-2xl fab fa-linkedin fa-3x">LinkedIn</i>
+                        <i class="text-2xl fab fa-linkedin fa-3x underline">LinkedIn</i>
                     </a></div>
                 </div>
             </div>
