@@ -225,6 +225,31 @@
     </div>
     
 </section>
+<section class=" bg-bright_bg text-dark_text text-xl justify-center flex text-center pb-16 lg:pb-32"> <!--Certifications-->
+    <div class="container">
+        <div class="row">
+            <div class="text-dark_text">
+                Certifications
+                <div class="container pb-8 pt-6">
+                    <div class="flex">
+                        <div class="w-full max-w-screen-lg mx-auto px-4">
+                            <div class="bg-dark_bg text-bright_text rounded-3xl px-4 lg:px-8 py-1  w-6/12 mx-auto border-4 border-black">
+                                <h1 class="mb-8 text-bright_text text-md lg:text-2xl text-center">
+                                    2nd place on Startup Challenge by
+                                </h1>
+                                <div class="flex justify-center space-x-12 xl:space-x-20">
+                                    <img src="images/Engame.webp" alt="Engame Akadémia" class="w-4/12 h-auto">
+                                    <img src="images/Day1.webp" alt="Day1 Capital" class="w-4/12 h-auto">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+</section>
 
 
 <footer class=" pt-5 lg:pt-10 bg-dark_bg text-bright_text" id="footer">
