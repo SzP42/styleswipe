@@ -15,7 +15,6 @@
       let clothesObj = await getNextSet()
       
       currentSetId.update(n => {
-        console.log(n)
         if (n.length < 2) {
           n.push(clothesObj['setId']); // Add the new element if less than 2
           return n
