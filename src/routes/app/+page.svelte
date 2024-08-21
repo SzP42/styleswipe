@@ -2,6 +2,7 @@
     import { CardSwiper } from '$lib/CardSwiper/'
     import { goto } from '$app/navigation'
     import { currentSetId } from '$lib/stores.js'
+    import { get } from 'svelte/store';
 
     export let data
 
@@ -12,7 +13,18 @@
     // the card that will come up next
     let cardData = async (index) => {
       let clothesObj = await getNextSet()
-      currentSetId.update(n => clothesObj['setId'])
+      
+      currentSetId.update(n => {
+        console.log(n)
+        if (n.length < 2) {
+          n.push(clothesObj['setId']); // Add the new element if less than 2
+          return n
+        } else {
+          n[0] = n[1]; // Shift the first element
+          n[1] = clothesObj['setId'];  // Add the new element as the second
+          return n
+        }
+      })
 
       return {
         title: clothesObj['name'],
@@ -20,7 +32,7 @@
         // needed to update the UI more easily
         image: clothesObj['clothes'][0]["publicUrl"],
         imageArr: clothesObj['clothes'],
-        productLink: `/set/${$currentSetId}`
+        productLink: `/set/${clothesObj["setId"]}`
       }
     }
 
@@ -82,7 +94,7 @@ for (let i=0; i < imageData.length; i++) {
     const { direction } = detail
     
     if (direction == 'left') {
-    supabase.rpc('modificate', {liked: false, set_id: $currentSetId})
+    supabase.rpc('modificate', {liked: false, set_id: $currentSetId[0]})
     .then((result => {
       if (result['error']) {console.error(result['error'])}
     }))
@@ -90,7 +102,7 @@ for (let i=0; i < imageData.length; i++) {
     }
 
     if (direction == 'right') {
-    supabase.rpc('modificate', {liked: true, set_id: $currentSetId})
+    supabase.rpc('modificate', {liked: true, set_id: $currentSetId[0]})
     .then((result => {
       if (result['error']) {console.error(result['error'])}
     }))
