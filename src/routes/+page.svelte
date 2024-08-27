@@ -42,12 +42,12 @@
                 </li>
                 <li>
                     
-                <span class="block h-1 rounded-full bg-transparent"></span><a class="nav-link" href="#">Founders</a>
+                <span class="block h-1 rounded-full bg-transparent"></span><a class="nav-link" href="#">Contact us</a>
                     <span class="block h-1 rounded-full bg-transparent"></span>
                 </li>
                 <li>
                     
-                <span class="block h-1 rounded-full bg-transparent"></span><a class="nav-link" href="#">Contact us</a>
+                <span class="block h-1 rounded-full bg-transparent"></span><a class="nav-link" href="contact">Become our partner</a>
                     <span class="block h-1 rounded-full bg-transparent"></span>
                 </li>
                 <span class="block h-3 rounded-full bg-transparent"></span>
