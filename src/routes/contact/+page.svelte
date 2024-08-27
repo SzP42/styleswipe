@@ -6,9 +6,11 @@
 	import { enhance } from "$app/forms";
 
     let formResponse = null;
+    import Navbar from '../navbar.svelte';
 
 </script>
 
+<Navbar />
 <body>
     <h1>Contact form</h1>
 
