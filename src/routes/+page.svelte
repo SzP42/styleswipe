@@ -8,69 +8,17 @@
         const { data, error } = await supabase.auth.getSession()
         if (data['session']) {goto('/app')}
     })
+    import Navbar from './navbar.svelte';
+    import Footer from './footer.svelte';
 </script>
 
-<nav class="navbar pt-5 z-50 top-0 border-b-2 border-black items-center sticky navbar-dark bg-[#dcbaa4]" id="navbar"> <!--Navigation Bar-->
-    <div class="">
-        <div class="flex items-center justify-between">
-            <button class="navbar-btn pl-6" onclick="toggleVisibility()" data-toggle="collapse" data-target="#navbar-row" aria-expanded="false" aria-label="Toggle navigation">
-                <svg class="block h-10 w-10 fill-current" viewBox="2 0 20 20" xmlns="http://www.w3.org/2000/svg">
-                    <title>Mobile menu</title>
-                    <path d="M0 4h20v1H0V4zm0 6h20v1H0v-1zm0 6h20v1H0v-1z"></path>
-                </svg>
-            </button>
-            <div class="flex-grow flex justify-center">
-                <a href="/">
-                    <img src="images/stsw_transparent-dark.png" alt="Style Swipe" class="mb-4 w-64 h-16 object-cover object-center border-4 rounded-lg border-dark_text">
-                </a>
-            </div>
-            <div class="w-12"></div> <!-- This empty div balances the layout -->
-        </div>
-        
-        <div class="navbar-row hidden pr-6 pl-6" id="navbar-row">
-            <ul class="navbar-col">
-                <li>
-                    
-                    
-                <span class="block h-1 rounded-full bg-transparent"></span><a class="nav-link" href="/">Home</a>
-                    <span class="block h-1 rounded-full bg-transparent"></span>
-                </li>
-                <li>
-                    
-                <span class="block h-1 rounded-full bg-transparent"></span><a class="nav-link" href="#">About us</a>
-                    <span class="block h-1 rounded-full bg-transparent"></span>
-                </li>
-                <li>
-                    
-                <span class="block h-1 rounded-full bg-transparent"></span><a class="nav-link" href="#">Founders</a>
-                    <span class="block h-1 rounded-full bg-transparent"></span>
-                </li>
-                <li>
-                    
-                <span class="block h-1 rounded-full bg-transparent"></span><a class="nav-link" href="#">Contact us</a>
-                    <span class="block h-1 rounded-full bg-transparent"></span>
-                </li>
-                <span class="block h-3 rounded-full bg-transparent"></span>
-                <li>
-                    <a class="btn text-dark_text btn-outline  btn-lg font-medium capitalize border-2 border-dark_text rounded-lg p-1 hover:text-bright_text hover:bg-dark_bg text-lg" href="/login">Get Started</a>
-                </li>
-                <span class="block h-3 rounded-full "></span>
-            </ul>
-        </div>
-        <script>
-            function toggleVisibility() {
-              var textElement = document.getElementById("navbar-row");
-              textElement.classList.toggle("hidden");
-            }
-          </script>
-    </div>
-</nav>
+<Navbar />
 <section class="py-16 bg-bright_bg justify-center flex text-center lg:py-32"> <!--Call to action-->
     <div class="container">
         <div class="row gap-y-12">
             <div class="text-dark_text">
                 <h1 class="mb-8 text-dark_text text-3xl">Find your dream outfits just by swiping!</h1>
-                <p class="mb-8 text-xl">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.</p>
+                <span class="block h-1 rounded-full bg-transparent"></span>
                 <a class="btn btn-lg btn-tertiary w-full sm:w-max text-3xl underline" href="/login"><button class="border-2 border-black rounded-xl bg-bright_bg text-dark_text hover:bg-dark_bg hover:text-bright_text p-2">Find your style!</button></a> <!--TODO Href to actual swiping page if already signed in-->
             </div>
         </div>
@@ -80,8 +28,8 @@
     <div class="flex justify-center items-center">
         <div class="grid grid-cols-2 align-middle mx-10 text-center gap-x-6 text-dark_text md:grid-cols-3 md:gap-x-10 lg:grid-cols-3 lg:gap-x-16 gap-y-6 xl:gap-x-24 xl:mx-20">
             <div class="col">
-                <h2 class="h2 text-2xl font-semibold mb-4 " >How we work</h2>
-                <button onclick="togglehowwework()"><p class="line-clamp-2 mb-4 text-muted border-2 border-black rounded-xl bg-bright_bg text-dark_text hover:bg-dark_bg hover:text-bright_text p-2" id="howwework">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.</p></button>
+                <h2 class="h2 text-2xl font-semibold mb-4 " >Capsule Wardrobe</h2>
+                <button onclick="togglehowwework()"><p class="line-clamp-2 mb-4 text-muted border-2 border-black rounded-xl bg-bright_bg text-dark_text hover:bg-dark_bg hover:text-bright_text p-2" id="howwework">According to the definition, "a capsule wardrobe is a minimalist collection of clothes that can be put together in different ways to cover a variety of outfits and occasions"1. What we offer is the perfect capsule wardrobe tailored to your style.</p></button>
             </div>
                 <script>
                     function togglehowwework() {
@@ -91,8 +39,8 @@
                 </script>
 
             <div class="col">
-                <h2 class="h2 text-2xl font-semibold mb-4" >Measurments</h2>
-                <button onclick="togglemeasurment()"><p class="line-clamp-2 mb-4 text-muted border-2 border-black rounded-xl bg-bright_bg text-dark_text hover:bg-dark_bg hover:text-bright_text p-2" id="measurment">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.</p></button>
+                <h2 class="h2 text-2xl font-semibold mb-4" >Numerous Outfits</h2>
+                <button onclick="togglemeasurment()"><p class="line-clamp-2 mb-4 text-muted border-2 border-black rounded-xl bg-bright_bg text-dark_text hover:bg-dark_bg hover:text-bright_text p-2" id="measurment">Our goal is to create as many looks as possible with just a few clothing items. Buy fewer clothes and achieve a highly curated look through the masterful combination of those items. For example, just 7 pieces of clothing can create 16 different appearances.</p></button>
             </div>
                 <script>
                     function togglemeasurment() {
@@ -102,8 +50,9 @@
                 </script>
 
             <div class="col">
-                <h2 class="h2 text-2xl font-semibold mb-4" >Algorythm</h2>
-                <button onclick="togglealgorythm()"><p class="line-clamp-2 mb-4 text-muted border-2 border-black rounded-xl bg-bright_bg text-dark_text hover:bg-dark_bg hover:text-bright_text p-2" id="algorythm">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.</p></button>
+                <h2 class="h2 text-2xl font-semibold mb-4" >Effortless</h2>
+                <button onclick="togglealgorythm()"><p class="line-clamp-2 mb-4 text-muted border-2 border-black rounded-xl bg-bright_bg text-dark_text hover:bg-dark_bg hover:text-bright_text p-2" id="algorythm">Our wardrobes are curated by style advisors who focus on colors, harmony, and finding the perfect matching pieces, so you don't have to worry about putting outfits together. Simply enjoy the countless looks they create.
+                </p></button>
             </div>
             
                 <script>
@@ -113,20 +62,10 @@
                     }
                     </script>
 
+            
             <div class="col">
-                <h2 class="h2 text-2xl font-semibold mb-4" >Our sets</h2>
-                <button onclick="togglesetinformhome()"><p class="line-clamp-2 mb-4 text-muted border-2 border-black rounded-xl bg-bright_bg text-dark_text hover:bg-dark_bg hover:text-bright_text p-2" id="setinformhome">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.</p></button>
-            </div>
-                <script>
-                    function togglesetinformhome() {
-                        var textElement = document.getElementById("setinformhome");
-                        textElement.classList.toggle("line-clamp-2");
-                    }
-                    </script>
-
-            <div class="col">
-                <h2 class="h2 text-2xl font-semibold mb-4" >Discounts</h2>
-                <button onclick="togglediscountinfo()"><p class="line-clamp-2 mb-4 text-muted border-2 border-black rounded-xl bg-bright_bg text-dark_text hover:bg-dark_bg hover:text-bright_text p-2" id="discountinfo">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.</p></button>
+                <h2 class="h2 text-2xl font-semibold mb-4" >Interface & Algorithm</h2>
+                <button onclick="togglediscountinfo()"><p class="line-clamp-2 mb-4 text-muted border-2 border-black rounded-xl bg-bright_bg text-dark_text hover:bg-dark_bg hover:text-bright_text p-2" id="discountinfo">Finding your wardrobe feels more like playing a game than a physically and mentally exhausting task. By swiping wardrobes left or right based on your preferences, our algorithm learns your style and curates the perfect wardrobe for you.</p></button>
             </div>
             
             <script>
@@ -137,8 +76,8 @@
             </script>
 
             <div class="col">
-                <h2 class="h2 text-2xl font-semibold mb-4" >Interface</h2>
-                <button onclick="toggleinterfaceinfo()"><p class="line-clamp-2 mb-4 text-muted border-2 border-black rounded-xl bg-bright_bg text-dark_text hover:bg-dark_bg hover:text-bright_text p-2" id="interfaceinfo">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.</p></button>
+                <h2 class="h2 text-2xl font-semibold mb-4" >Time-Saving</h2>
+                <button onclick="toggleinterfaceinfo()"><p class="line-clamp-2 mb-4 text-muted border-2 border-black rounded-xl bg-bright_bg text-dark_text hover:bg-dark_bg hover:text-bright_text p-2" id="interfaceinfo">Your time is valuable to us. Save time with our pre-made outfits that cover every aspect of your wardrobe, instead of spending hours shopping and manually putting together a wardrobe in enormous online stores. Just a few clicks, and you won't have to think about what to wear.</p></button>
             </div>
 
             <script>
@@ -147,6 +86,19 @@
                     textElement.classList.toggle("line-clamp-2");
                 }
             </script>
+            <div class="col">
+                <h2 class="h2 text-2xl font-semibold mb-4" >Discounts</h2>
+                <button onclick="togglesetinformhome()"><p class="line-clamp-2 mb-4 text-muted border-2 border-black rounded-xl bg-bright_bg text-dark_text hover:bg-dark_bg hover:text-bright_text p-2" id="setinformhome">We help you save money when you shop with us compared to regular stores. Soon, we'll introduce exclusive discounts ranging from 10% to 30% on entire wardrobes, which can include 8 to 15 pieces, offering significant savings.
+                </p></button>
+            </div>
+                <script>
+                    function togglesetinformhome() {
+                        var textElement = document.getElementById("setinformhome");
+                        textElement.classList.toggle("line-clamp-2");
+                    }
+                    </script>
+
+
         </div>
     </div>
 </section>
@@ -251,29 +203,4 @@
     
 </section>
 
-
-<footer class=" pt-5 lg:pt-10 bg-dark_bg text-bright_text" id="footer"> 
-    <div class="container ">
-        <div class="row">
-            <div class="col w-6/12 ml-5">
-                <h1 class="text-muted text-3xl"> Reach StyleSwipe:</h1> <!--TODO Change to logo?-->
-            </div>
-            <div class="col w-6/12 ml-16">  
-                <div class="gap-4">
-                    <div><a href="https://facebook.com"target="_blank">
-                        <i class="text-2xl underline">Facebook</i>
-                    </a></div>
-                    <div><a href="https://twitter.com" target="_blank">
-                        <i class="text-2xl fab fa-twitter underline">Twitter</i>
-                    </a></div>
-                    <div><a href="https://instagram.com" target="_blank">
-                        <i class="text-2xl fab fa-instagram fa-3x underline">Instagram</i>
-                    </a></div>
-                    <div><a href="https://linkedin.com" target="_blank">
-                        <i class="text-2xl fab fa-linkedin fa-3x underline">LinkedIn</i>
-                    </a></div>
-                </div>
-            </div>
-        </div>
-    </div>
-</footer>
+<Footer />
