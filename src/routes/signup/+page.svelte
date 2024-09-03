@@ -54,8 +54,8 @@ await supabase.auth.signInWithOAuth({
 
 
 <body class="bg-bright_bg">
-    <div class="flex flex-col w-full md:w-1/2 xl:w-2/5 2xl:w-2/5 3xl:w-1/3 mx-auto p-8 md:p-10 2xl:p-12 3xl:p-14 bg-dark_bg rounded-2xl shadow-xl min-h-screen font-serif text-bright_text">
-        <img src="/images/stsw_transparent-bright.png" alt="stsw" class="flex mx-auto h-40">
+    <div class="flex flex-col w-full md:w-1/2 xl:w-2/5 2xl:w-2/5 3xl:w-1/3 mx-auto p-8 md:p-10 2xl:p-12 3xl:p-14 bg-dark_bg md:rounded-2xl shadow-xl min-h-screen text-bright_text">
+        <img src="/images/stsw_transparent-bright.png" alt="stsw" class="flex mx-auto size-60">
         <div class="flex flex-col justify-center mx-auto gap-3">
             <h3 class="flex justify-center mb-3 text-2xl">Sign up</h3>
 
@@ -69,14 +69,14 @@ await supabase.auth.signInWithOAuth({
                     <input type="password" id="password" bind:value={password} required autocomplete="new-password" class="rounded-lg bg-input_bg focus:bg-special_state_bg text-input_text pl-4">
                 </div>
                 <div class="flex justify-center">
-                    <button on:click={() => userSignUp(email, password)} class="rounded-lg bg-input_bg hover:bg-special_state_bg text-input_text p-1">Join StyleSwipe</button>
+                    <button on:click={() => userSignUp(email, password)} class="line-clamp-2 mb-4 text-muted border-2 border-black rounded-xl bg-input_bg text-dark_text hover:bg-dark_bg hover:text-bright_text p-2 text-lg">Join StyleSwipe</button>
                 </div>
             </form>
 
-            <p class="flex justify-center mt-4">Or</p>
-            <button on:click={handleSignInWithGoogle} class="hover:underline p-0"> Sign up with Google </button>
+            <p class="flex justify-center mt-4 text-lg">Or</p>
+            <button on:click={handleSignInWithGoogle} class="hover:underline p-0 text-lg"> Sign up with Google </button>
             <hr>
-            <p>Already have an account? <a href="/login" class="hover:underline">Log in</a></p>
+            <p class="text-lg">Already have an account? <a href="/login" class="hover:underline">Log in</a></p>
             </div>
         </div>
 </body>
