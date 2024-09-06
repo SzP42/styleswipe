@@ -191,7 +191,6 @@
                                 </h1>
                                 <div class="flex justify-center space-x-20 xl:space-x-24 pb-2 lg:pb-4">
                                     <img src="images/Engame.webp" alt="Engame Akadémia" class="w-4/12 h-auto">
-                                    <img src="images/Day1.webp" alt="Day1 Capital" class="w-4/12 h-auto">
                                 </div>
                             </div>
                         </div>
