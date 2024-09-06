@@ -14,6 +14,7 @@
     let cardData = async (index) => {
       let clothesObj = await getNextSet()
       
+      // updates the currentSetId svelte store
       currentSetId.update(n => {
         if (n.length < 2) {
           n.push(clothesObj['setId']); // Add the new element if less than 2
@@ -24,13 +25,11 @@
           return n
         }
       })
-
+        
       return {
         title: clothesObj['name'],
-        description: clothesObj['clothes'].length,
-        // needed to update the UI more easily
-        image: clothesObj['clothes'][0]["publicUrl"],
-        imageArr: clothesObj['clothes'],
+        image: clothesObj['publicUrl'],
+        // imageArr: clothesObj['clothes'],
         productLink: `/set/${clothesObj["setId"]}`
       }
     }
@@ -38,7 +37,6 @@
   async function getNextSet() {
 
 // holds the data for all the clothes in a single set
-let clothesArr = []
 
 const resp = await supabase.rpc('get_next_set')
 const setId = resp['data']
@@ -59,28 +57,19 @@ const price = data[0]['price']
 const images = await supabase
 .storage
 .from(setId)
-.list()
+.list('', {search: "fullSet"})
 
 const imageData = images['data']
 if (!imageData) {console.log(images['error'])}
 
-// for every image it gets the public url and builds an object consisting of the id, the url and the file path
-for (let i=0; i < imageData.length; i++) {
+      // gets the name of the image file and the public Url for it
+        let filepath = imageData[0]['name']
+        const { data: { publicUrl } } = supabase
+        .storage
+        .from(setId)
+        .getPublicUrl(filepath)
 
-    let filepath = imageData[i]['name']
-    const { data: { publicUrl } } = supabase
-    .storage
-    .from(setId)
-    .getPublicUrl(filepath)
-
-    const clothesData = {id: i, publicUrl, filepath }
-    clothesArr.push(clothesData)
-    }
-
-    // holds the clothesArr and additional information about the sets, will be the return value
-    const clothesObj = {clothes: clothesArr, name, setId, price }
-
-    return clothesObj
+    return {name, setId, price, publicUrl }
 }
 
     async function logout() {
