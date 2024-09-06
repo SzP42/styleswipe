@@ -29,7 +29,7 @@
         <div class="grid grid-cols-2 align-middle mx-10 text-center gap-x-6 text-dark_text md:grid-cols-3 md:gap-x-10 lg:grid-cols-3 lg:gap-x-16 gap-y-6 xl:gap-x-24 xl:mx-20">
             <div class="col">
                 <h2 class="h2 text-2xl font-semibold mb-4 " >Capsule Wardrobe</h2>
-                <button onclick="togglehowwework()"><p class="line-clamp-2 mb-4 text-muted border-2 border-black rounded-xl bg-bright_bg text-dark_text hover:bg-dark_bg hover:text-bright_text p-2" id="howwework">According to the definition, "a capsule wardrobe is a minimalist collection of clothes that can be put together in different ways to cover a variety of outfits and occasions"1. What we offer is the perfect capsule wardrobe tailored to your style.</p></button>
+                <p class="mb-4 text-muted border-2 border-black rounded-xl bg-dark_bg text-bright_text p-2" id="howwework">According to the definition, "a capsule wardrobe is a minimalist collection of clothes that can be put together in different ways to cover a variety of outfits and occasions". What we offer is the perfect capsule wardrobe tailored to your style.</p>
             </div>
                 <script>
                     function togglehowwework() {
@@ -38,9 +38,24 @@
                     }
                 </script>
 
+
+            <div class="col">
+                <h2 class="h2 text-2xl font-semibold mb-4" >Effortless</h2>
+                <p class="mb-4 text-muted border-2 border-black rounded-xl bg-dark_bg text-bright_text p-2" id="algorythm">Our wardrobes are curated by style advisors who focus on colors, harmony, and finding the perfect matching pieces, so you don't have to worry about putting outfits together. Simply enjoy the countless looks they create.
+                </p>
+            </div>
+
+                <script>
+                    function togglealgorythm() {
+                        var textElement = document.getElementById("algorythm");
+                        textElement.classList.toggle("line-clamp-2");
+                    }
+                    </script>
+
+
             <div class="col">
                 <h2 class="h2 text-2xl font-semibold mb-4" >Numerous Outfits</h2>
-                <button onclick="togglemeasurment()"><p class="line-clamp-2 mb-4 text-muted border-2 border-black rounded-xl bg-bright_bg text-dark_text hover:bg-dark_bg hover:text-bright_text p-2" id="measurment">Our goal is to create as many looks as possible with just a few clothing items. Buy fewer clothes and achieve a highly curated look through the masterful combination of those items. For example, just 7 pieces of clothing can create 16 different appearances.</p></button>
+                <p class="mb-4 text-muted border-2 border-black rounded-xl bg-dark_bg text-bright_text p-2" id="measurment">Our goal is to create as many looks as possible with just a few clothing items. Buy fewer clothes and achieve a highly curated look through the masterful combination of those items. For example, just 7 pieces of clothing can create 16 different appearances.</p>
             </div>
                 <script>
                     function togglemeasurment() {
@@ -49,23 +64,11 @@
                     }
                 </script>
 
-            <div class="col">
-                <h2 class="h2 text-2xl font-semibold mb-4" >Effortless</h2>
-                <button onclick="togglealgorythm()"><p class="line-clamp-2 mb-4 text-muted border-2 border-black rounded-xl bg-bright_bg text-dark_text hover:bg-dark_bg hover:text-bright_text p-2" id="algorythm">Our wardrobes are curated by style advisors who focus on colors, harmony, and finding the perfect matching pieces, so you don't have to worry about putting outfits together. Simply enjoy the countless looks they create.
-                </p></button>
-            </div>
             
-                <script>
-                    function togglealgorythm() {
-                        var textElement = document.getElementById("algorythm");
-                        textElement.classList.toggle("line-clamp-2");
-                    }
-                    </script>
-
             
             <div class="col">
                 <h2 class="h2 text-2xl font-semibold mb-4" >Interface & Algorithm</h2>
-                <button onclick="togglediscountinfo()"><p class="line-clamp-2 mb-4 text-muted border-2 border-black rounded-xl bg-bright_bg text-dark_text hover:bg-dark_bg hover:text-bright_text p-2" id="discountinfo">Finding your wardrobe feels more like playing a game than a physically and mentally exhausting task. By swiping wardrobes left or right based on your preferences, our algorithm learns your style and curates the perfect wardrobe for you.</p></button>
+                <p class="mb-4 text-muted border-2 border-black rounded-xl bg-dark_bg text-bright_text p-2" id="discountinfo">Finding your wardrobe feels more like playing a game than a physically and mentally exhausting task. By swiping wardrobes left or right based on your preferences, our algorithm learns your style and curates the perfect wardrobe for you.</p>
             </div>
             
             <script>
@@ -77,7 +80,7 @@
 
             <div class="col">
                 <h2 class="h2 text-2xl font-semibold mb-4" >Time-Saving</h2>
-                <button onclick="toggleinterfaceinfo()"><p class="line-clamp-2 mb-4 text-muted border-2 border-black rounded-xl bg-bright_bg text-dark_text hover:bg-dark_bg hover:text-bright_text p-2" id="interfaceinfo">Your time is valuable to us. Save time with our pre-made outfits that cover every aspect of your wardrobe, instead of spending hours shopping and manually putting together a wardrobe in enormous online stores. Just a few clicks, and you won't have to think about what to wear.</p></button>
+                <p class="mb-4 text-muted border-2 border-black rounded-xl bg-dark_bg text-bright_text p-2" id="interfaceinfo">Your time is valuable to us. Save time with our pre-made outfits that cover every aspect of your wardrobe, instead of spending hours shopping and manually putting together a wardrobe in enormous online stores. Just a few clicks, and you won't have to think about what to wear.</p>
             </div>
 
             <script>
@@ -88,8 +91,8 @@
             </script>
             <div class="col">
                 <h2 class="h2 text-2xl font-semibold mb-4" >Discounts</h2>
-                <button onclick="togglesetinformhome()"><p class="line-clamp-2 mb-4 text-muted border-2 border-black rounded-xl bg-bright_bg text-dark_text hover:bg-dark_bg hover:text-bright_text p-2" id="setinformhome">We help you save money when you shop with us compared to regular stores. Soon, we'll introduce exclusive discounts ranging from 10% to 30% on entire wardrobes, which can include 8 to 15 pieces, offering significant savings.
-                </p></button>
+                <p class=" mb-4 text-muted border-2 border-black rounded-xl bg-dark_bg text-bright_text p-2" id="setinformhome">We help you save money when you shop with us compared to regular stores. Soon, we'll introduce exclusive discounts ranging from 10% to 30% on entire wardrobes, which can include 8 to 15 pieces, offering significant savings.
+                </p>
             </div>
                 <script>
                     function togglesetinformhome() {
