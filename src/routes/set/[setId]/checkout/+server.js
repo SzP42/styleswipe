@@ -15,10 +15,6 @@ export async function POST(event) {
 
     let stripeMetadata = {}
 
-    for (let i=0; i < data["selectedSizes"].length; i++) {
-        stripeMetadata[`${i}`] = data['selectedSizes'][i]
-    }
-
     const stripe_data = {
     price_data: {
         currency: 'USD',

@@ -1,7 +1,7 @@
 <script>
     //+page.svelte
 
-    export let form
+    // export let form
 
 	import { enhance } from "$app/forms";
 
@@ -120,7 +120,6 @@
                 </div>
             </div>
         </div>
-        
     </section>
 
 </body>

@@ -36,6 +36,7 @@ export const load = async (event) => {
 
       clothesDataArr.push(data)
     });
+    
 
     // gets the link to the brand's image
     if(brand) {
@@ -57,8 +58,9 @@ export const load = async (event) => {
 
     // used for stripe images 
     let urlArr = []
+
     // appends the image data to the arrays
-    for (let i=0; i < data.length; i++) {
+    for (let i=0; i < data.length-2; i++) {
     const urlObj = supabase
     .storage
     .from(setId)
@@ -66,7 +68,8 @@ export const load = async (event) => {
 
     urlArr.push(urlObj['data']['publicUrl'])
 
-    clothesDataArr[i][0]['imageUrl'] = urlObj['data']['publicUrl']
+
+    // clothesDataArr[i][0]['imageUrl'] = urlObj['data']['publicUrl']
 
     }
 
