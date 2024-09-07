@@ -119,7 +119,7 @@
         <div class="grid grid-cols-2 align-middle mx-10 text-center gap-x-7 text-dark_text md:grid-cols-3 md:gap-x-12 lg:grid-cols-3 lg:gap-x-20 gap-y-6 xl:gap-x-30 xl:mx-20">
             <div class="col">
                 <h2 class="h2 text-2xl font-semibold mb-4 " >Old money</h2>
-                <img src="images/Old_Money_Pic.png" alt="Old Money set" class="rounded-3xl border-2 border-black">
+                <img src="images/Oldmoney_Pic.png" alt="Old Money set" class="rounded-3xl border-2 border-black">
                  </div>
 
             <div class="col">
@@ -129,20 +129,20 @@
                 
 
             <div class="col">
-                <h2 class="h2 text-2xl font-semibold mb-4" >Soft boy</h2>
-                <img src="images/Soft_Boy_Pic.png" alt="Soft boy set" class="rounded-3xl border-2 border-black">
+                <h2 class="h2 text-2xl font-semibold mb-4" >Athleisure</h2>
+                <img src="images/Athleisure_Pic.png" alt="Athleisure set" class="rounded-3xl border-2 border-black">
                   </div>
             
 
             <div class="col">
-                <h2 class="h2 text-2xl font-semibold mb-4" >Skater</h2>
-                <img src="images/Skater_Pic.jpg" alt="Skater set" class="rounded-3xl border-2 border-black">
+                <h2 class="h2 text-2xl font-semibold mb-4" >Elegant</h2>
+                <img src="images/Elegant_Pic.png" alt="Elegant set" class="rounded-3xl border-2 border-black">
                    </div>
                 
 
             <div class="col">
                 <h2 class="h2 text-2xl font-semibold mb-4" >Retro</h2>
-                <img src="images/Retro_Pic.jpg" alt="Retro set" class="rounded-3xl border-2 border-black">
+                <img src="images/Retro_Pic.png" alt="Retro set" class="rounded-3xl border-2 border-black">
                   </div>
             
             
