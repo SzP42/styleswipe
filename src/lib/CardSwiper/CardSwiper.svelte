@@ -144,11 +144,12 @@
 }} />
 
 
-<div class="w-screen h-auto md:w-7/12 lg:w-1/2 lg:h-5/6 xl:w-1/3 ml-6">
-	<div class="flex justify-center w-5/6 h-5/6 relative z-0" bind:this={container}>
-		<svelte:component this={Card} bind:element={card1} {...card1Data} />
-		<svelte:component this={Card} bind:element={card2} {...card2Data} />
+<div class="w-screen h-auto  flex flex-col items-center justify-center">
+	<div class="flex justify-center md:w-1/2 lg:w-1/3 w-5/6 h-5/6 relative z-0" bind:this={container}>
+			<svelte:component this={Card} bind:element={card1} {...card1Data} />
+			<svelte:component this={Card} bind:element={card2} {...card2Data} />
 	</div>
+
 	<div class="grid grid-cols-3 w-5/6 h-20 mt-10">
 		<div class="flex justify-start">
 			<button on:click={() => {swipe("left")}} class="bg-input_bg hover:bg-special_state_bg text-4xl rounded-full w-20">❌</button>
@@ -159,6 +160,17 @@
 		<div class="flex justify-end">
 			<button on:click={() => {swipe("right")}} class="bg-input_bg hover:bg-special_state_bg text-4xl rounded-full w-20">❤️</button>
 		</div>
+
+	<div class="grid grid-cols-3 md:w-1/2 lg:w-1/3 w-5/6 h-20 mt-10">
+			<div class="flex justify-start">
+					<button on:click={() => {swipe("left")}} class="bg-input_bg hover:bg-special_state_bg text-4xl rounded-full w-20">❌</button>
+			</div>
+			<div class="flex justify-center">
+					<button on:click={() => {goto(`set/${$currentSetId[0]}`)}} class="bg-input_bg hover:bg-special_state_bg text-4xl rounded-full w-20">✨</button>
+			</div>
+			<div class="flex justify-end">
+					<button on:click={() => {swipe("right")}} class="bg-input_bg hover:bg-special_state_bg text-4xl rounded-full w-20">❤️</button>
+			</div>
+
 	</div>
 </div>
-
