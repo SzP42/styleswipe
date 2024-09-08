@@ -75,9 +75,9 @@
     {/if}
   </div>
 
-  <div class="grid grid-cols-3 gap-4 justify-items-center mb-16">
+  <div class="grid grid-cols-4 gap-4 justify-items-center mb-16">
     {#each urlArr as image}
-    <div class="h-auto w-3/4">
+    <div class="h-auto w-3/12">
       <img src={image} alt="piece" class="">
     </div>
     {/each}
@@ -86,6 +86,10 @@
 
   <div class="flex flex-row justify-center my-20">
     <button on:click={checkout} class="w-3/4 bg-input_bg rounded-lg hover:bg-special_state_bg hover:ring-2 hover:ring-special_state_bg">Buy</button>
+  </div>
+
+  <div class="flex flex-row justify-center my-20">
+    <button on:click={logout} class="w-3/4 bg-input_bg rounded-lg hover:bg-special_state_bg hover:ring-2 hover:ring-special_state_bg">Buy</button>
   </div>
 
 </body>

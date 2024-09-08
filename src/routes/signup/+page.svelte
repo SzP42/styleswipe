@@ -1,4 +1,5 @@
 <script>
+	import { goto } from '$app/navigation';
 
 let email = ""
 let password = ""
@@ -32,7 +33,7 @@ async function userSignUp(useremail, userpassword) {
         // uses the supabase sdk to sign up the user
         try { 
     const { data, error } = await supabase.auth.signUp({email: useremail, password: userpassword, options: {emailRedirectTo: "/app"}})
-    alert(`Confirm your email! We've sent a confirmation email to ${email}`)
+    goto("/app")
     return data
         } catch (err) {
             console.error(err)
