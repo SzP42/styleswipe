@@ -89,7 +89,7 @@
   </div>
 
   <div class="flex flex-row justify-center my-20">
-    <button on:click={logout} class="w-3/4 bg-input_bg rounded-lg hover:bg-special_state_bg hover:ring-2 hover:ring-special_state_bg">Buy</button>
+    <button on:click={logout} class="w-3/4 bg-input_bg rounded-lg hover:bg-special_state_bg hover:ring-2 hover:ring-special_state_bg">Log out</button>
   </div>
 
 </body>
