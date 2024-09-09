@@ -11,7 +11,7 @@
         </div>
         <div class="flex justify-center">
             <a href="/">
-                <img src="images/stsw_transparent-dark.png" alt="Style Swipe" class="w-64 h-16 object-cover object-center border-4 rounded-lg border-[#7b3f00]">
+                <img src="images/navbar-logo.png" alt="Style Swipe" class="w-64 h-16 object-cover object-center border-4 rounded-lg border-dark_bg">
             </a>
         </div>
         <div class="flex md:mr-10 lg:mr-20 justify-end items-center">
