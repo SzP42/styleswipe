@@ -4,10 +4,10 @@ export default {
   theme: {
     extend: {
       colors: {
-        'bright_bg': "#f0eee6", 
-        'dark_bg': "#ac663e",
-        'bright_text': "#f2f1ea",
-        'dark_text': "#7b3f00",
+        'bright_bg': "#f8f0e5", 
+        'dark_bg': "#0f2c59",
+        'bright_text': "#DAC0A3",
+        'dark_text': "#000000",
         
         'input_bg': "#FFE4C4", 
         'input_text': '#333333',
