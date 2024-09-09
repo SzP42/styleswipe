@@ -1,16 +1,27 @@
-<nav class="navbar pt-5 z-50 top-0 border-b-2 border-black items-center sticky navbar-dark bg-[#dcbaa4]" id="navbar">
-    <div class="pb-7 relative">
-        <div class="pt-3 flex items-center">
-            <div class="items-center z-10"> <!-- Increase z-index here -->
+<nav class="navbar pt-4 z-50 top-0 border-b-2 border-black items-center sticky navbar-dark bg-[#EADBC8]" id="navbar">
+    <div class="pb-4 relative flex justify-between items-center">
+        <div class="flex ml-20 justify-start items-center">
+            <div class="items-center z-10">
                 <div class="items-center">
-                    <a class="btn btn-lg btn-tertiary ml-10 underline" href="/contact"><button class="border-2 border-black rounded-xl bg-bright_bg text-dark_text hover:bg-dark_bg hover:text-bright_text p-2">Become our partner!</button></a> 
+                    <a class="btn btn-lg btn-tertiary ml-10 underline" href="/contact">
+                        <button class="border-2 border-black rounded-3xl bg-bright_bg text-dark_text hover:bg-dark_bg hover:text-bright_text w-36 p-2">Join Us!</button>
+                    </a> 
                 </div>
             </div>
         </div>
-        <div class="absolute inset-0 flex justify-center z-0"> <!-- Lower z-index here -->
+        <div class="flex justify-center">
             <a href="/">
-                <img src="images/stsw_transparent-dark.png" alt="Style Swipe" class="w-64 h-16 object-cover object-center border-4 rounded-lg border-dark_text">
+                <img src="images/stsw_transparent-dark.png" alt="Style Swipe" class="w-64 h-16 object-cover object-center border-4 rounded-lg border-[#7b3f00]">
             </a>
+        </div>
+        <div class="flex mr-20 justify-end items-center">
+            <div class="items-center z-10">
+                <div class="items-center">
+                    <a class="btn btn-lg btn-tertiary mr-10 underline" href="/login">
+                        <button class="border-2 border-black rounded-3xl bg-dark_bg text-bright_text hover:bg-bright_bg hover:text-dark_text w-36 p-2">Find Your Style!</button>
+                    </a> 
+                </div>
+            </div>
         </div>
     </div>
 </nav>
