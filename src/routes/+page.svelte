@@ -24,45 +24,7 @@
         </div>
     </div>
 </section>
-<section class="pt-16 bg-bright_bg text-dark_text lg:pt-32"> <!--About us-->
-    <div class="flex justify-center items-center">
-        <div class="grid grid-cols-1 sm:grid-cols-2 align-middle mx-10 text-center gap-x-6 text-dark_text md:grid-cols-3 md:gap-x-10 lg:grid-cols-3 lg:gap-x-16 gap-y-6 xl:gap-x-24 xl:mx-20">
-            <div class="col bg-white rounded-3xl border-2 border-dark_bg shadow-lg hover:shadow-2xl  hover:shadow-black shadow-black">
-                <h2 class="h2 text-xl sm:text-2xl md:text-2xl lg:text-3xl bg-dark_bg py-3 text-white rounded-full mt-10 w-4/6 mx-auto font-semibold mb-4" >Capsule Wardrobe</h2>
-                <p class="p-2" id="howwework">According to the definition, "a capsule wardrobe is a minimalist collection of clothes that can be put together in different ways to cover a variety of outfits and occasions". What we offer is the perfect capsule wardrobe tailored to your style.</p>
-            </div>
 
-            <div class="col bg-white rounded-3xl border-2 border-dark_bg shadow-lg hover:shadow-2xl  hover:shadow-black shadow-black">
-                <h2 class="h2 text-xl sm:text-2xl md:text-2xl lg:text-3xl bg-dark_bg py-3 text-white rounded-full mt-10 w-4/6 mx-auto font-semibold mb-4" >Effortless</h2>
-                <p class="p-2" id="algorythm">Our wardrobes are curated by style advisors who focus on colors, harmony, and finding the perfect matching pieces, so you don't have to worry about putting outfits together. Simply enjoy the countless looks they create.
-                </p>
-            </div>
-
-            <div class="col bg-white rounded-3xl border-2 border-dark_bg shadow-lg hover:shadow-2xl  hover:shadow-black shadow-black">
-                <h2 class="h2 text-xl sm:text-2xl md:text-2xl lg:text-3xl bg-dark_bg py-3 text-white rounded-full mt-10 w-4/6 mx-auto font-semibold mb-4" >Numerous Outfits</h2>
-                <p class="p-2" id="measurment">Our goal is to create as many looks as possible with just a few clothing items. Buy fewer clothes and achieve a highly curated look through the masterful combination of those items. For example, just 7 pieces of clothing can create 16 different appearances.</p>
-            </div>
-            
-            <div class="col bg-white rounded-3xl border-2 border-dark_bg shadow-lg hover:shadow-2xl  hover:shadow-black shadow-black">
-                <h2 class="h2 text-lg sm:text-2xl md:text-2xl lg:text-3xl bg-dark_bg py-3 text-white rounded-full mt-10 w-4/6 mx-auto font-semibold mb-4"  >Interface & Algorithm</h2>
-                <p class="p-2" id="discountinfo">Finding your wardrobe feels more like playing a game than a physically and mentally exhausting task. By swiping wardrobes left or right based on your preferences, our algorithm learns your style and curates the perfect wardrobe for you.</p>
-            </div>
-
-            <div class="col bg-white rounded-3xl border-2 border-dark_bg shadow-lg hover:shadow-2xl  hover:shadow-black shadow-black">
-                <h2 class="h2 text-lg sm:text-2xl md:text-2xl lg:text-3xl bg-dark_bg py-3 text-white rounded-full mt-10 w-4/6 mx-auto font-semibold mb-4"  >Time-Saving</h2>
-                <p class="p-2" id="interfaceinfo">Your time is valuable to us. Save time with our pre-made outfits that cover every aspect of your wardrobe, instead of spending hours shopping and manually putting together a wardrobe in enormous online stores. Just a few clicks, and you won't have to think about what to wear.</p>
-            </div>
-
-            <div class="col bg-white rounded-3xl border-2 border-dark_bg shadow-lg hover:shadow-2xl  hover:shadow-black shadow-black">
-                <h2 class="h2 text-lg sm:text-2xl md:text-2xl lg:text-3xl bg-dark_bg py-3 text-white rounded-full mt-10 w-4/6 mx-auto font-semibold mb-4" >Discounts</h2>
-                <p class="p-2" id="setinformhome">We help you save money when you shop with us compared to regular stores. Soon, we'll introduce exclusive discounts ranging from 10% to 30% on entire wardrobes, which can include 8 to 15 pieces, offering significant savings.
-                </p>
-            </div>
-
-
-        </div>
-    </div>
-</section>
 
 <div class="py-16 bg-bright_bg justify-center flex text-center lg:pt-32">
     <div class="container align-middle flex justify-center text-bright_text">
@@ -119,28 +81,48 @@
     </div>
     
 </section>
-<section class=" bg-bright_bg justify-center flex text-center pb-16 lg:pb-32"> <!--Call to action again-->
-    <div class="container">
-        <div class="row gap-y-12">
-            <div class="text-dark_text">
-                <a class="btn btn-lg btn-tertiary w-full sm:w-max text-3xl underline" href="/login"><button class="border-2 border-black rounded-xl bg-bright_bg text-dark_text hover:bg-dark_bg hover:text-bright_text px-8 py-4"> Find out! </button></a> <!--TODO Href to actual swiping page if already signed in-->
-                <div class="container p-8 lg:pt-16">
-                    <div class="flex justify-center items-center align-middle">
-                        <div class="w-full max-w-screen-lg mx-auto px-4">
-                            <div class="bg-dark_bg text-bright_text rounded-lg px-4 lg:px-8 py-1 w-full md:w-8/12 mx-auto border-double border-8 border-black">
-                                <h1 class="my-8 text-bright_text text-2xl text-center">
-                                Don't waste time with shopping, get the full set designed for you!
-                                </h1>
-                            </div>
-                        </div>
-                    </div>
-                </div>
+<section class="pt-16 bg-bright_bg text-dark_text md:pt-32"> <!--About us-->
+    <div class="pb-8 md:pb-16">
+        <h1 class="text-dark_bg text-2xl sm:text-3xl md:text-4xl flex justify-center">OUR PASSION, YOUR STYLE</h1>
+    </div>
+    <div class="flex justify-center items-center">
+        <div class="grid grid-cols-1 sm:grid-cols-2 align-middle mx-10 text-center gap-x-6 text-dark_text md:grid-cols-3 md:gap-x-10 lg:grid-cols-3 lg:gap-x-16 gap-y-6 xl:gap-x-24 xl:mx-20">
+            <div class="col bg-white rounded-3xl border-2 border-dark_bg shadow-lg hover:shadow-2xl  hover:shadow-black shadow-black">
+                <h2 class="h2 text-xl sm:text-2xl md:text-2xl lg:text-3xl bg-dark_bg py-3 text-white rounded-full mt-10 w-4/6 mx-auto font-semibold mb-4" >Capsule Wardrobe</h2>
+                <p class="p-2" id="howwework">A capsule wardrobe is a minimalist collection of clothes that can create various outfits for different occasions.</p>
             </div>
+
+            <div class="col bg-white rounded-3xl border-2 border-dark_bg shadow-lg hover:shadow-2xl  hover:shadow-black shadow-black">
+                <h2 class="h2 text-xl sm:text-2xl md:text-2xl lg:text-3xl bg-dark_bg py-3 text-white rounded-full mt-10 w-4/6 mx-auto font-semibold mb-4" >Effortless</h2>
+                <p class="p-2" id="algorythm">Our advisors curate wardrobes focused on color and harmony, so you don’t have to. Enjoy countless ready-made looks.</p>
+            </div>
+
+            <div class="col bg-white rounded-3xl border-2 border-dark_bg shadow-lg hover:shadow-2xl  hover:shadow-black shadow-black">
+                <h2 class="h2 text-xl sm:text-2xl md:text-2xl lg:text-3xl bg-dark_bg py-3 text-white rounded-full mt-10 w-4/6 mx-auto font-semibold mb-4" >Numerous Outfits</h2>
+                <p class="p-2" id="measurment">We aim to maximize looks with just a few pieces. For example, 7 items can generate 16 unique outfits.</p>
+            </div>
+            
+            <div class="col bg-white rounded-3xl border-2 border-dark_bg shadow-lg hover:shadow-2xl  hover:shadow-black shadow-black">
+                <h2 class="h2 text-lg sm:text-2xl md:text-2xl lg:text-3xl bg-dark_bg py-3 text-white rounded-full mt-10 w-4/6 mx-auto font-semibold mb-4"  >Interface & Algorithm</h2>
+                <p class="p-2" id="discountinfo">Swipe left or right on wardrobes, and our algorithm learns your style to find your perfect match.</p>
+            </div>
+
+            <div class="col bg-white rounded-3xl border-2 border-dark_bg shadow-lg hover:shadow-2xl  hover:shadow-black shadow-black">
+                <h2 class="h2 text-lg sm:text-2xl md:text-2xl lg:text-3xl bg-dark_bg py-3 text-white rounded-full mt-10 w-4/6 mx-auto font-semibold mb-4"  >Time-Saving</h2>
+                <p class="p-2" id="interfaceinfo">Save time with pre-made outfits. Just a few clicks, and your wardrobe is complete, no need to browse endlessly.</p>
+            </div>
+
+            <div class="col bg-white rounded-3xl border-2 border-dark_bg shadow-lg hover:shadow-2xl  hover:shadow-black shadow-black">
+                <h2 class="h2 text-lg sm:text-2xl md:text-2xl lg:text-3xl bg-dark_bg py-3 text-white rounded-full mt-10 w-4/6 mx-auto font-semibold mb-4" >Discounts</h2>
+                <p class="p-2" id="setinformhome">Save money with us compared to regular stores. Soon, get exclusive discounts of 10% to 30% on wardrobes with 8 to 15 pieces.</p>
+            </div>
+
+
         </div>
     </div>
-    
 </section>
-<section class=" bg-bright_bg text-dark_text text-xl justify-center flex text-center pb-16 lg:pb-32"> <!--Certifications-->
+<section class=" bg-bright_bg text-dark_text text-xl justify-center flex text-center py-16 lg:py-32"> <!--Certifications-->
+    
     <div class="container">
         <div class="row">
             <div class="text-dark_text">
