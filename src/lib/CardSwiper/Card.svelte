@@ -12,7 +12,7 @@
 </script>
 
 <div
-	class="w-full h-full absolute cursor-grab ease-in-out rounded-xl touch-none select-none bg-[#f2f2f2] border-2 border-black {color} overflow-hidden flex justify-center mt-6 mb-6"
+	class="w-full h-full absolute cursor-grab ease-in-out rounded-xl touch-none select-none bg-[#f2f2f2] border-2 border-dark_bg {color} overflow-hidden flex justify-center mt-6 mb-6"
 	bind:this={element}
 >
 {#key image}

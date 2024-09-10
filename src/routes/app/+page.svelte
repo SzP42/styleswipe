@@ -101,7 +101,7 @@ if (!imageData) {console.log(images['error'])}
     
   </script>
 
-  <body class="bg-dark_bg font-serif">
+  <body class="bg-bright_bg font-serif">
     <div class="flex flex-col-reverse xl:flex-row justify-center">
       <div class="flex justify-center h-screen w-screen">
         <CardSwiper cardData={cardData} minSwipeDistance={0.25} on:swiped={swiper} />
