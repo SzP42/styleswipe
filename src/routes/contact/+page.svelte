@@ -74,7 +74,7 @@
                             <textarea class="text-dark_text" name="message" id="message"></textarea>
                         </div>
                         <button type="submit" onclick="togglesubmit()" class="justify-center flex">
-                            <p class="line-clamp-2 mb-4 text-muted border-2 border-black rounded-xl bg-bright_bg text-dark_text hover:bg-dark_bg hover:text-bright_text w-1/2 p-2" id="submitbut">Submit</p>
+                            <p class="line-clamp-2 mb-4 text-muted border-2 border-black rounded-xl bg-bright_bg text-dark_text hover:bg-special_state_bg hover:text-dark_bg w-1/2 p-2" id="submitbut">Submit</p>
                         </button>
                     </form>
                 </div>
