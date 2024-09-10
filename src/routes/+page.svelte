@@ -117,37 +117,37 @@
 <section class="pb-16 bg-bright_bg text-dark_text lg:pb-32"> <!--Pictures-->
     <div class="flex justify-center items-center">
         <div class="grid grid-cols-2 align-middle mx-10 text-center gap-x-7 text-dark_text md:grid-cols-3 md:gap-x-12 lg:grid-cols-3 lg:gap-x-20 gap-y-6 xl:gap-x-30 xl:mx-20">
-            <div class="col bg-white rounded-3xl border-2 border-black">
+            <div class="col bg-white rounded-3xl border-2 border-black shadow-lg hover:shadow-2xl  hover:shadow-black shadow-black">
                 <h2 class="h2 text-xl sm:text-2xl md:text-2xl lg:text-3xl bg-dark_bg py-3 text-white rounded-full mt-10 w-4/6 mx-auto font-semibold mb-4" >Old money</h2>
                 <img src="images/Oldmoney_Pic.png" alt="Old Money set" class="rounded-3xl">
             </div>
 
-            <div class="col bg-white rounded-3xl border-2 border-black">
+            <div class="col bg-white rounded-3xl border-2 border-black shadow-lg hover:shadow-2xl  hover:shadow-black shadow-black">
                 <h2 class="h2 text-xl sm:text-2xl md:text-2xl lg:text-3xl bg-dark_bg py-3 text-white rounded-full mt-10 w-4/6 mx-auto font-semibold mb-4" >Elegant</h2>
                 <img src="images/Elegant_Pic.png" alt="Elegant set" class="rounded-3xl">
             </div>
                 
 
-            <div class="col bg-white rounded-3xl border-2 border-black">
+            <div class="col bg-white rounded-3xl border-2 border-black shadow-lg hover:shadow-2xl  hover:shadow-black shadow-black">
                 <h2 class="h2 text-xl sm:text-2xl md:text-2xl lg:text-3xl bg-dark_bg py-3 text-white rounded-full mt-10 w-4/6 mx-auto font-semibold mb-4" >Athleisure</h2>
                 <img src="images/Athleisure_Pic.png" alt="Athleisure set" class="rounded-3xl">
             </div>
             
 
-            <div class="col bg-white rounded-3xl border-2 border-black">
+            <div class="col bg-white rounded-3xl border-2 border-black shadow-lg hover:shadow-2xl  hover:shadow-black shadow-black">
                 <h2 class="h2 text-xl sm:text-2xl md:text-2xl lg:text-3xl bg-dark_bg py-3 text-white rounded-full mt-10 w-4/6 mx-auto font-semibold mb-4" >Elegant</h2>
                 <img src="images/Elegant_Pic.png" alt="Elegant set" class="rounded-3xl">
             </div>
                 
 
-            <div class="col bg-white rounded-3xl border-2 border-black">
+            <div class="col bg-white rounded-3xl border-2 border-black shadow-lg hover:shadow-2xl  hover:shadow-black shadow-black">
                 <h2 class="h2 text-xl sm:text-2xl md:text-2xl lg:text-3xl bg-dark_bg py-3 text-white rounded-full mt-10 w-4/6 mx-auto font-semibold mb-4" >Retro</h2>
                 <img src="images/Retro_Pic.png" alt="Retro set" class="rounded-3xl">
             </div>
             
             
 
-            <div class="col bg-white rounded-3xl border-2 border-black">
+            <div class="col bg-white rounded-3xl border-2 border-black shadow-lg hover:shadow-2xl  hover:shadow-black shadow-black">
                 
                 <h2 class="h2 text-xl sm:text-2xl md:text-2xl lg:text-3xl bg-dark_bg py-3 text-white rounded-full mt-10 w-4/6 mx-auto font-semibold mb-4" >Streetwear</h2>
                 
