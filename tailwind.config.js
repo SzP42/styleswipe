@@ -11,7 +11,10 @@ export default {
         
         'input_bg': "#FFE4C4", 
         'input_text': '#333333',
-        'special_state_bg': "#f5f5dc"
+        'special_state_bg': "#eadbc8"
+      },
+      fontFamily: {
+        sans: ['Lora', 'serif']
       }
     },
   },

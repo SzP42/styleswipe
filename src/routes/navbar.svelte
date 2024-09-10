@@ -4,7 +4,7 @@
             <div class="items-center z-10">
                 <div class="items-center">
                     <a class="btn btn-lg btn-tertiary underline" href="/contact">
-                        <button class="border-2 border-black rounded-3xl bg-white text-dark_text hover:bg-dark_bg hover:text-bright_text w-28 text-xs md:text-base md:w-36 p-2">Join Us!</button>
+                        <button class="border-2 border-black rounded-3xl bg-white text-dark_text hover:bg-dark_bg hover:text-bright_text w-28 text-xs md:text-base md:w-40 p-2">Join Us!</button>
                     </a> 
                 </div>
             </div>
@@ -18,7 +18,7 @@
             <div class="items-center z-10">
                 <div class="items-center">
                     <a class="btn btn-lg btn-tertiary underline" href="/login">
-                        <button class="border-2 border-black rounded-3xl bg-dark_bg text-bright_text hover:bg-bright_bg hover:text-dark_text w-28 text-xs md:text-base md:w-36 p-2">Find Your Style!</button>
+                        <button class="border-2 border-black rounded-3xl bg-dark_bg text-bright_text hover:bg-bright_bg hover:text-dark_text w-28 text-xs md:text-base md:w-40 p-2">Find Your Style!</button>
                     </a> 
                 </div>
             </div>
