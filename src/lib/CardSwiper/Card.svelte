@@ -20,7 +20,7 @@
 	<img class="w-full h-full rounded-xl object-scale-down" src={image} alt={title} />
 {/if}
 {/key}
-	<div class="absolute inset-0 bg-gradient-to-t from-white/80 via-white/0 rounded-b-xl"></div>
+	<div class="absolute inset-0 bg-white rounded-b-xl"></div>
 	<div class="p-4 absolute bottom-0 w-full">
 		<div class="grid grid-cols-3">
 			<div class="flex flex-col justify-start col-span-2">
