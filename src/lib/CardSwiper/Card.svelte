@@ -16,11 +16,15 @@
 	bind:this={element}
 >
 	<div class="grid grid-cols-1">
-		<img class="w-full h-full rounded-xl object-scale-down" src="images/Elegant_Pic.png" alt="Vibrant Odyssey" />
+		{#key image}
+		{#if image}
+		<img class="w-full h-full rounded-xl object-scale-down" src={image} alt={title} />
+		{/if}
+		{/key}
 		<div class="px-4 pb-8 bottom-0 flex justify-center bg-transparent">
 			<div class="w-8/12">
 				<a href={productLink} target="_blank">
-					<h3 class="text-xl md:text-2xl p-3 rounded-3xl bg-dark_bg  text-bright_text font-semibold text-wrap flex justify-center">Vibrant Odyssey</h3> 
+					<h3 class="text-xl md:text-2xl p-3 rounded-3xl bg-dark_bg  text-bright_text font-semibold text-wrap flex justify-center">{title}</h3> 
 				</a>
 			</div>
 		</div>
