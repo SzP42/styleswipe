@@ -8,8 +8,6 @@
 	export let title: string = '';
 	export let image: string | undefined = undefined;
 	export let productLink: string = '';
-	title="Super Set2000";
-	image="images/Elegant_Pic.png";
 </script>
 	<div class="w-full h-full absolute cursor-grab ease-in-out rounded-xl touch-none select-none bg-[#ffffff] border-2 border-dark_bg {color} overflow-hidden flex justify-center mt-6 mb-6" bind:this={element}>
 		<div class="grid grid-cols-1">
