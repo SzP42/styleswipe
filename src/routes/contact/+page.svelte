@@ -95,36 +95,40 @@
     <script>
         function validateForm() {
             const form = document.getElementById('contactForm');
+            if (!form) return false;
+    
             const firstName = form.elements['firstname'].value.trim();
             const lastName = form.elements['lastname'].value.trim();
             const email = form.elements['email'].value.trim();
             const message = form.elements['message'].value.trim();
     
             if (firstName && lastName && email && message) {
-                return true; // Form is valid
+                return true;
             } else {
                 alert("Please fill out all required fields (First name, Last name, Email, and Message).");
-                return false; // Form is invalid
+                return false;
             }
         }
     
         function showAlert() {
-            document.getElementById('alert-popup').classList.remove('hidden');
+            const alertPopup = document.getElementById('alert-popup');
+            if (alertPopup) alertPopup.classList.remove('hidden');
         }
     
         function closeAlert() {
-            document.getElementById('alert-popup').classList.add('hidden');
+            const alertPopup = document.getElementById('alert-popup');
+            if (alertPopup) alertPopup.classList.add('hidden');
         }
     
-        document.addEventListener('DOMContentLoaded', function() {
+        function initializeForm() {
             const form = document.getElementById('contactForm');
             const closeAlertButton = document.getElementById('closeAlert');
     
             if (form) {
                 form.addEventListener('submit', function(event) {
-                    event.preventDefault(); // Prevent default form submission
+                    event.preventDefault();
                     if (validateForm()) {
-                        showAlert(); // Show alert if form is valid
+                        showAlert();
                     }
                 });
             }
@@ -132,7 +136,14 @@
             if (closeAlertButton) {
                 closeAlertButton.addEventListener('click', closeAlert);
             }
-        });
+        }
+    
+        // Try different initialization methods
+        if (document.readyState === 'loading') {
+            document.addEventListener('DOMContentLoaded', initializeForm);
+        } else {
+            initializeForm();
+        }
     </script>
     <section class=" bg-bright_bg text-dark_text text-xl justify-center flex text-center py-16 lg:py-32"> <!--Certifications-->
         <div class="container">
