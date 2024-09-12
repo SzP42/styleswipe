@@ -20,14 +20,12 @@
 	<img class="w-full h-full rounded-xl object-scale-down" src={image} alt={title} />
 {/if}
 {/key}
-	<div class="absolute inset-0 bg-gradient-to-t from-white/80 via-white/0 rounded-b-xl"></div>
-	<div class="p-4 absolute bottom-0 w-full">
-		<div class="grid grid-cols-3">
-			<div class="flex flex-col justify-start col-span-2">
-				<a href={productLink} target="_blank">
-					<h3 class="text-2xl font-semibold text-wrap text-dark_text underline ">{title}</h3> 
-				</a>
-			</div>
+	<div class="absolute inset-0 bg-white rounded-b-xl"></div>
+	<div class="p-4 pb-8 absolute bottom-0 max-w-8/12">
+		<div class="flex flex-col justify-start col-span-2">
+			<a href={productLink} target="_blank">
+				<h3 class="text-xl md:text-2xl p-3 rounded-3xl bg-dark_bg  text-bright_text font-semibold text-wrap flex justify-center">{title}</h3> 
+			</a>
 		</div>
 	</div>
 </div>
