@@ -28,12 +28,6 @@
 </section>
 <body class="bg-bright_bg">
     <h1 class="flex justify-center text-2xl ">Why should you sell on StyleSwipe?</h1>
-    <script>
-    function togglesubmit() {
-        var textElement = document.getElementById("alert-popup");
-        textElement.classList.toggle("hidden");
-    }
-    </script>
     <div class="flex justify-center">
         <div class="grid grid-cols-2 align-middle mx-10 text-center gap-x-7 text-dark_text md:gap-x-12 lg:gap-x-20 gap-y-6 xl:gap-x-30 xl:mx-20"> <!--Main grid-->
             <div class="flex justify-center">
@@ -48,7 +42,7 @@
             <div class="grid grid-cols-1 text-bright_text"> <!--Right form-->
                 <div class="bg-dark_bg rounded-xl mx-auto border-2 border-black p-8">
                     <h1 class="text-center mb-8">Discuss the opportunities!</h1>
-                    <form method="post" use:enhance class="grid grid-col-1 gap-y-6">
+                    <form id="contactForm" method="post" use:enhance class="grid grid-col-1 gap-y-6">
                         <div>
                             <label for="firstname">First name</label>
                             <input class="text-dark_text" type="text" name="firstname" id="firstname" required placeholder="John">
@@ -71,9 +65,9 @@
                         </div>
                         <div>
                             <label for="message">Message</label>
-                            <textarea class="text-dark_text" name="message" id="message"></textarea>
+                            <textarea class="text-dark_text" name="message" id="message" placeholder="Your message" required autocomplete="message"></textarea>
                         </div>
-                        <button type="submit" onclick="togglesubmit()" class="justify-center flex">
+                        <button type="submit" id="submitButton" class="justify-center flex">
                             <p class="line-clamp-2 mb-4 text-muted border-2 border-black rounded-xl bg-bright_bg text-dark_text hover:bg-special_state_bg hover:text-dark_bg w-1/2 p-2" id="submitbut">Submit</p>
                         </button>
                     </form>
@@ -82,22 +76,64 @@
         </div>
     </div>
     <div id="alert-popup" class="fixed content-center pb-24 inset-0 bg-gray-600 bg-opacity-50 overflow-y-auto h-full w-full hidden">
-        <div class="relative top-20 mx-auto p-5 border w-96 shadow-lg rounded-md bg-white">
+        <div class="relative top-20 mx-auto p-5 border-2 border-dark_bg w-96 shadow-lg rounded-md bg-bright_bg">
             <div class="mt-3 text-center">
-                <h3 class="text-lg leading-6 font-medium text-gray-900">Alert</h3>
+                <h3 class="text-lg leading-6 font-semibold text-gray-900">Success!</h3>
                 <div class="mt-2 px-7 py-3">
-                    <p class="text-sm text-gray-500">
-                        This is your alert message.
+                    <p class="text-sm text-dark_text">
+                        We have received Your message. We will get back to You as soon as possible!
                     </p>
                 </div>
                 <div class="items-center px-4 py-3">
-                    <button id="closeAlert" onclick="togglesubmit()"  class="px-4 py-2 bg-blue-500 text-white text-base font-medium rounded-md w-full shadow-sm hover:bg-blue-700 focus:outline-none focus:ring-2 focus:ring-blue-300">
+                    <button id="closeAlert" class="px-4 py-2 bg-dark_bg text-bright_text text-base font-medium rounded-md w-full shadow-sm hover:bg-blue-700 focus:outline-none focus:ring-2 focus:ring-blue-300">
                         OK
                     </button>
                 </div>
             </div>
         </div>
     </div>
+    <script>
+        function validateForm() {
+            const form = document.getElementById('contactForm');
+            const firstName = form.elements['firstname'].value.trim();
+            const lastName = form.elements['lastname'].value.trim();
+            const email = form.elements['email'].value.trim();
+            const message = form.elements['message'].value.trim();
+    
+            if (firstName && lastName && email && message) {
+                return true; // Form is valid
+            } else {
+                alert("Please fill out all required fields (First name, Last name, Email, and Message).");
+                return false; // Form is invalid
+            }
+        }
+    
+        function showAlert() {
+            document.getElementById('alert-popup').classList.remove('hidden');
+        }
+    
+        function closeAlert() {
+            document.getElementById('alert-popup').classList.add('hidden');
+        }
+    
+        document.addEventListener('DOMContentLoaded', function() {
+            const form = document.getElementById('contactForm');
+            const closeAlertButton = document.getElementById('closeAlert');
+    
+            if (form) {
+                form.addEventListener('submit', function(event) {
+                    event.preventDefault(); // Prevent default form submission
+                    if (validateForm()) {
+                        showAlert(); // Show alert if form is valid
+                    }
+                });
+            }
+    
+            if (closeAlertButton) {
+                closeAlertButton.addEventListener('click', closeAlert);
+            }
+        });
+    </script>
     <section class=" bg-bright_bg text-dark_text text-xl justify-center flex text-center py-16 lg:py-32"> <!--Certifications-->
         <div class="container">
             <div class="row">
