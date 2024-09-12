@@ -17,10 +17,10 @@
 >
 {#key image}
 {#if image}
-	<img class="w-full h-full rounded-xl object-scale-down z-40" src={image} alt={title} />
+	<img class="w-full h-full rounded-xl object-scale-down" src={image} alt={title} />
 {/if}
 {/key}
-	<div class="absolute inset-0 bg-white rounded-b-xl z-0"></div>
+	<div class="absolute inset-0 bg-white rounded-b-xl"></div>
 	<div class="p-4 pb-8 absolute bottom-0 max-w-8/12">
 		<div class="flex flex-col justify-start col-span-2">
 			<a href={productLink} target="_blank">
