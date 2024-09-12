@@ -13,7 +13,7 @@
 		<div class="grid grid-cols-1">
 			{#key image}
 			{#if image}
-				<img class="w-full h-full rounded-xl object-scale-down" src={image} alt={title} />
+				<img class="w-full h-full rounded-xl object-contain" src={image} alt={title} />
 			{/if}
 			{/key}
 				<div class="absolute inset-0 rounded-b-xl"></div>
