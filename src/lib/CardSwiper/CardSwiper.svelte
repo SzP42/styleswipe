@@ -152,13 +152,13 @@
 
 	<div class="grid grid-cols-3 md:w-1/2 lg:w-1/3 w-5/6 h-20 mt-10">
 		<div class="flex justify-start">
-			<button on:click={() => {swipe("left")}} class="bg-input_bg hover:bg-special_state_bg text-4xl border-2 border-dark_bg rounded-full w-20">❌</button>
+			<button on:click={() => {swipe("left")}} class="bg-input_bg hover:bg-special_state_bg text-3xl border-2 border-dark_bg rounded-full w-20"><img src="images/X_Icon.png" class="rounded-full" alt="dislike"></button>
 		</div>
 		<div class="flex justify-center">
-			<button on:click={() => {goto(`set/${$currentSetId[0]}`)}} class="bg-input_bg hover:bg-special_state_bg text-4xl border-2 border-dark_bg rounded-full w-20">🛒</button>
+			<button on:click={() => {goto(`set/${$currentSetId[0]}`)}} class="bg-input_bg hover:bg-special_state_bg text-3xl border-2 border-dark_bg rounded-full w-20"><img src="images/Cart_Icon.png" class=rounded-full alt="see more"></button>
 		</div>
 		<div class="flex justify-end ">
-			<button on:click={() => {swipe("right")}} class="bg-input_bg hover:bg-special_state_bg text-4xl border-2 border-dark_bg rounded-full w-20">❤️</button>
+			<button on:click={() => {swipe("right")}} class="bg-input_bg hover:bg-special_state_bg text-3xl border-2 border-dark_bg rounded-full w-20"><img src="images/Heart_Icon.png" class="rounded-full" alt="like"></button>
 		</div>
 	</div>
 	
