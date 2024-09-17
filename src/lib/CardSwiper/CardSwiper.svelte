@@ -159,6 +159,7 @@
 		</div>
 		<div class="flex justify-end overflow-hidden">
 			<button on:click={() => {swipe("right")}} class="bg-input_bg hover:bg-special_state_bg text-4xl border-2 border-dark_bg rounded-full w-20 "><img src="images/love icon.png" class="object-contain rounded-full"></button>
+
 		</div>
 	</div>
 	
