@@ -144,13 +144,13 @@
 }} />
 
 
-<div class="w-screen h-auto  flex flex-col items-center justify-center">
+<div class="w-screen h-auto flex flex-col items-center justify-center">
 	<div class="flex justify-center md:w-1/2 lg:w-1/3 w-5/6 h-5/6 relative z-0" bind:this={container}>
 			<svelte:component this={Card} bind:element={card1} {...card1Data} />
 			<svelte:component this={Card} bind:element={card2} {...card2Data} />
 	</div>
 
-	<div class="grid grid-cols-3 md:w-1/2 lg:w-1/3 w-5/6 h-20">
+	<div class="grid grid-cols-3 md:w-1/2 lg:w-1/3 w-5/6 h-20 -mt-20">
 		<div class="flex justify-start overflow-hidden">
 			<button on:click={() => {swipe("left")}} class="bg-input_bg hover:bg-special_state_bg text-4xl border-2 border-dark_bg rounded-full w-20"><img src="images/x icon.png" class="object-scale-down rounded-full"></button>
 		</div>
