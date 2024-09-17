@@ -17,7 +17,7 @@
     <div class="container bg-white py-2">
         <div class="row gap-y-12">
             <div class="text-dark_text">
-                <h1 class="text-2xl pb-8">What is a Capsule Wardrobe?</h1>
+                <h1 class="text-2xl pb-8">What is a <i>Capsule Wardrobe?</i></h1>
                 <h2 class="flex justify-center pb-4">Lorem Ipsun Lorem Ipsun Lorem Ipsun Lorem Ipsun Lorem Ipsun Lorem Ipsun Lorem Ipsun Lorem Ipsun Lorem Ipsun Lorem Ipsun Lorem Ipsun Lorem Ipsun Lorem Ipsun Lorem Ipsun Lorem Ipsun Lorem Ipsun Lorem Ipsun Lorem Ipsun </h2>
                 <div class="">
                     <div class="grid grid-cols-3 items-center">
