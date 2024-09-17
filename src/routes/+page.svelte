@@ -19,8 +19,8 @@
     <div class="container bg-white py-2">
         <div class="row gap-y-12">
             <div class="text-dark_text">
-                <h1 class="text-2xl pb-8">What is a <i>Capsule Wardrobe?</i></h1>
-                <h2 class="flex justify-center pb-4 mx-2">A capsule wardrobe is a minimalist collection of clothes that can be put together in different ways to cover a variety of outfits and occasions. By swiping left or right on wardrobes, our algorithm learns your preferences and curates a personalized wardrobe for you. Our aim is to maximize your outfit options with just a few versatile pieces.</h2>
+                <h1 class="text-2xl text-dark_bg pb-8">What is a <i>Capsule Wardrobe?</i></h1>
+                <h2 class="flex justify-center pb-4 mx-14 text-justify">A capsule wardrobe is a minimalist collection of clothes that can be put together in different ways to cover a variety of outfits and occasions. By swiping left or right on wardrobes, our algorithm learns your preferences and curates a personalized wardrobe for you. Our aim is to maximize your outfit options with just a few versatile pieces.</h2>
                 <div class="">
                     <div class="grid grid-cols-3 items-center">
                         <div class="flex justify-end pr-4"><button id="left_CTA"  class="rounded-full border-2 border-black size-8"> &lt </button></div>
@@ -43,19 +43,19 @@
                   
                       switch (i) {
                         case 0:
-                            number = '21';
+                            number = '16';
                             imageSrc = 'images/Elegant_Pic.png';
                             break;
                         case 1:
-                            number = '32';
-                            imageSrc = 'images/Oldmoney_Pic.png';
+                            number = '19';
+                            imageSrc = 'images/Minimalist_Pic.png';
                             break;
                         case 2:
-                            number = '43';
+                            number = '18';
                             imageSrc = 'images/Retro_Pic.png';
                             break;
                         case 3:
-                            number = '54';
+                            number = '22';
                             imageSrc = 'images/Athleisure_Pic.png';
                             break;
                       }
@@ -98,39 +98,37 @@
     <div class="flex justify-center items-center">
         <div class="grid grid-cols-2 align-middle mx-10 text-center gap-x-7 text-dark_text md:grid-cols-3 md:gap-x-12 lg:grid-cols-3 lg:gap-x-20 gap-y-6 xl:gap-x-30 xl:mx-20">
             <div class="col bg-white rounded-3xl border-2 border-dark_bg shadow-lg hover:shadow-2xl  hover:shadow-black shadow-black">
-                <h2 class="h2 text-lg sm:text-2xl md:text-2xl lg:text-3xl bg-dark_bg py-3 text-white rounded-full mt-10 w-4/6 mx-auto font-semibold mb-4" >Old money</h2>
+                <h2 class="h2 text-lg sm:text-2xl md:text-2xl lg:text-3xl bg-dark_bg py-3 text-white rounded-full mt-4 md:mt-10 w-4/6 mx-auto font-semibold md:mb-4" >Old money</h2>
                 <img src="images/Oldmoney_Pic.png" alt="Old Money set" class="rounded-3xl">
             </div>
 
             <div class="col bg-white rounded-3xl border-2 border-dark_bg  shadow-lg hover:shadow-2xl  hover:shadow-black shadow-black">
-                <h2 class="h2 text-xl sm:text-2xl md:text-2xl lg:text-3xl bg-dark_bg py-3 text-white rounded-full mt-10 w-4/6 mx-auto font-semibold mb-4" >Elegant</h2>
+                <h2 class="h2 text-lg sm:text-2xl md:text-2xl lg:text-3xl bg-dark_bg py-3 text-white rounded-full mt-4 md:mt-10 w-4/6 mx-auto font-semibold md:mb-4" >Elegant</h2>
                 <img src="images/Elegant_Pic.png" alt="Elegant set" class="rounded-3xl">
             </div>
                 
 
             <div class="col bg-white rounded-3xl border-2 border-dark_bg  shadow-lg hover:shadow-2xl  hover:shadow-black shadow-black">
-                <h2 class="h2 text-xl sm:text-2xl md:text-2xl lg:text-3xl bg-dark_bg py-3 text-white rounded-full mt-10 w-4/6 mx-auto font-semibold mb-4" >Athleisure</h2>
+                <h2 class="h2 text-lg sm:text-2xl md:text-2xl lg:text-3xl bg-dark_bg py-3 text-white rounded-full mt-4 md:mt-10 w-4/6 mx-auto font-semibold md:mb-4" >Athleisure</h2>
                 <img src="images/Athleisure_Pic.png" alt="Athleisure set" class="rounded-3xl">
             </div>
             
 
             <div class="col bg-white rounded-3xl border-2 border-dark_bg  shadow-lg hover:shadow-2xl  hover:shadow-black shadow-black">
-                <h2 class="h2 text-xl sm:text-2xl md:text-2xl lg:text-3xl bg-dark_bg py-3 text-white rounded-full mt-10 w-4/6 mx-auto font-semibold mb-4" >Elegant</h2>
-                <img src="images/Elegant_Pic.png" alt="Elegant set" class="rounded-3xl">
+                <h2 class="h2 text-lg sm:text-2xl md:text-2xl lg:text-3xl bg-dark_bg py-3 text-white rounded-full mt-4 md:mt-10 w-4/6 mx-auto font-semibold md:mb-4" >Minimalist</h2>
+                <img src="images/Minimalist_Pic.png" alt="Minimalist set" class="rounded-3xl">
             </div>
                 
 
             <div class="col bg-white rounded-3xl border-2 border-dark_bg  shadow-lg hover:shadow-2xl  hover:shadow-black shadow-black">
-                <h2 class="h2 text-xl sm:text-2xl md:text-2xl lg:text-3xl bg-dark_bg py-3 text-white rounded-full mt-10 w-4/6 mx-auto font-semibold mb-4" >Retro</h2>
+                <h2 class="h2 text-lg sm:text-2xl md:text-2xl lg:text-3xl bg-dark_bg py-3 text-white rounded-full mt-4 md:mt-10 w-4/6 mx-auto font-semibold md:mb-4" >Retro</h2>
                 <img src="images/Retro_Pic.png" alt="Retro set" class="rounded-3xl">
             </div>
             
             
 
             <div class="col bg-white rounded-3xl border-2 border-dark_bg  shadow-lg hover:shadow-2xl  hover:shadow-black shadow-black">
-                
-                <h2 class="h2 text-xl sm:text-2xl md:text-2xl lg:text-3xl bg-dark_bg py-3 text-white rounded-full mt-10 w-4/6 mx-auto font-semibold mb-4" >Streetwear</h2>
-                
+                <h2 class="h2 text-lg sm:text-2xl md:text-2xl lg:text-3xl bg-dark_bg py-3 text-white rounded-full mt-4 md:mt-10 w-4/6 mx-auto font-semibold md:mb-4" >Streetwear</h2>
                 <img src="images/Streetwear_Pic.png" alt="Streetwear set" class="rounded-3xl">
               </div>
 
