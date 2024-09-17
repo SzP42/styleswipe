@@ -16,12 +16,70 @@
 
 <Navbar />
 <section class="py-16 bg-bright_bg justify-center flex text-center lg:py-32"> <!--Call to action-->
-    <div class="container">
+    <div class="container bg-white py-2">
         <div class="row gap-y-12">
             <div class="text-dark_text">
-                <h1 class="mb-8 text-dark_text text-3xl">Find your dream outfits just by swiping!</h1>
-                <span class="block h-1 rounded-full bg-transparent"></span>
-                <a class="btn btn-lg btn-tertiary w-full sm:w-max text-3xl underline" href="/login"><button class="border-2 border-black rounded-xl bg-bright_bg text-dark_text hover:bg-dark_bg hover:text-bright_text p-2">Find your style!</button></a> <!--TODO Href to actual swiping page if already signed in-->
+                <h1 class="text-2xl pb-8">What is a Capsule Wardrobe?</h1>
+                <h2 class="flex justify-center pb-4">Lorem Ipsun Lorem Ipsun Lorem Ipsun Lorem Ipsun Lorem Ipsun Lorem Ipsun Lorem Ipsun Lorem Ipsun Lorem Ipsun Lorem Ipsun Lorem Ipsun Lorem Ipsun Lorem Ipsun Lorem Ipsun Lorem Ipsun Lorem Ipsun Lorem Ipsun Lorem Ipsun </h2>
+                <div class="">
+                    <div class="grid grid-cols-3 items-center">
+                        <div class="flex justify-end pr-4"><button id="left_CTA"  class="rounded-full border-2 border-black size-8"> &lt </button></div>
+                        <div class="flex justify-center"><img id="image_CTA" class="rounded-3xl shadow-black shadow-sm border-2 border-black" alt=""></div>
+                        <div class="flex justify-start pl-4"><button id="right_CTA"  class="rounded-full border-2 border-black size-8"> &gt </button></div>
+                        
+                    </div>
+                    <div class=" text-dark_text flex justify-center pt-4"><p id="how_many_CTA" class="rounded-3xl text-2xl font-semibold bg-bright_text p-2"></p></div>
+                </div>
+                <script>
+                    let i = 0;
+                  
+                    const textElement = document.getElementById('how_many_CTA');
+                    const imageElement = document.getElementById('image_CTA');
+                    const leftButton = document.getElementById('left_CTA');
+                    const rightButton = document.getElementById('right_CTA');
+                  
+                    function updateText() {
+                      let text = '';
+                  
+                      switch (i) {
+                        case 0:
+                            number = '21';
+                            imageSrc = 'images/Elegant_Pic.png';
+                            break;
+                        case 1:
+                            number = '32';
+                            imageSrc = 'images/Oldmoney_Pic.png';
+                            break;
+                        case 2:
+                            number = '43';
+                            imageSrc = 'images/Retro_Pic.png';
+                            break;
+                        case 3:
+                            number = '54';
+                            imageSrc = 'images/Athleisure_Pic.png';
+                            break;
+                      }
+                  
+                        imageElement.src = imageSrc;
+                        textElement.innerHTML = `1 Capsule <br>${number} Outfits`;
+                    }
+                  
+                    function decreaseI() {
+                      i = (i - 1 + 4) % 4;
+                      updateText();
+                    }
+                  
+                    function increaseI() {
+                      i = (i + 1) % 4;
+                      updateText();
+                    }
+                  
+                    leftButton.addEventListener('click', decreaseI);
+                    rightButton.addEventListener('click', increaseI);
+                  
+                    // Initialize the text
+                    updateText();
+                  </script>
             </div>
         </div>
     </div>
