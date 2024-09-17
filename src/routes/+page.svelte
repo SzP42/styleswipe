@@ -4,10 +4,12 @@
     import "../app.css"
     export let data
     const { supabase } = data
-    onMount( async () => {
-        const { data, error } = await supabase.auth.getSession()
-        if (data['session']) {goto('/app')}
-    })
+
+    // onMount( async () => {
+    //     const { data, error } = await supabase.auth.getSession()
+    //     if (data['session']) {goto('/app')}
+    // })
+    
     import Navbar from './navbar.svelte';
     import Footer from './footer.svelte';
 </script>
