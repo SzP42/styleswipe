@@ -20,7 +20,7 @@
         <div class="row gap-y-12">
             <div class="text-dark_text">
                 <h1 class="text-2xl pb-8">What is a <i>Capsule Wardrobe?</i></h1>
-                <h2 class="flex justify-center pb-4">Lorem Ipsun Lorem Ipsun Lorem Ipsun Lorem Ipsun Lorem Ipsun Lorem Ipsun Lorem Ipsun Lorem Ipsun Lorem Ipsun Lorem Ipsun Lorem Ipsun Lorem Ipsun Lorem Ipsun Lorem Ipsun Lorem Ipsun Lorem Ipsun Lorem Ipsun Lorem Ipsun </h2>
+                <h2 class="flex justify-center pb-4">A capsule wardrobe is a minimalist collection of clothes that can be put together in different ways to cover a variety of outfits and occasions. By swiping left or right on wardrobes, our algorithm learns your preferences and curates a personalized wardrobe for you. Our aim is to maximize your outfit options with just a few versatile pieces.</h2>
                 <div class="">
                     <div class="grid grid-cols-3 items-center">
                         <div class="flex justify-end pr-4"><button id="left_CTA"  class="rounded-full border-2 border-black size-8"> &lt </button></div>
