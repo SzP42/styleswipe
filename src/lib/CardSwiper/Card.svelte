@@ -9,7 +9,8 @@
 	export let image: string | undefined = undefined;
 	export let productLink: string = '';
 </script>
-	<div class="w-full h-full absolute cursor-grab ease-in-out rounded-xl touch-none select-none bg-[#ffffff] border-2 border-dark_bg {color} overflow-hidden flex justify-center items-center mt-6 mb-6" bind:this={element}>
+
+	<div class="w-full h-5/6 absolute cursor-grab ease-in-out rounded-xl touch-none select-none bg-[#ffffff] border-2 border-dark_bg {color} overflow-hidden flex justify-center items-center mt-6" bind:this={element}>
 		<div class="flex flex-col rounded-xl overflow-hidden w-full h-full ">
 		{#key image}
 		<div class="flex-grow flex items-center justify-center" style="height: 90%;">
