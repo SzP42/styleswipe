@@ -35,7 +35,7 @@
         <div class="flex justify-end items-center">
             <div class="items-center z-10">
                 <div class="items-center">
-                    <a class="btn btn-lg btn-tertiary underline" href="/login">
+                    <a class="btn btn-lg btn-tertiary underline" href="/contact">
                         <button class="border-2 border-black rounded-3xl bg-dark_bg text-bright_text hover:bg-bright_bg hover:text-dark_text w-28 text-xs md:text-base md:w-40 p-2">Become Our Partner!</button>
                     </a> 
                 </div>
