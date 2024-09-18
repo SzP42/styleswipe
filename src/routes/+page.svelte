@@ -23,7 +23,7 @@
     <div>
         <a href="/app"><img src="videos/swipe.gif" alt=""></a>
         <a href="/app" class="flex justify-center">
-            <button class="border-2 shadow-sm hover:shadow-black hover:shadow-md shadow-dark_bg border-black rounded-3xl hover:bg-white hover:text-dark_text bg-dark_bg text-bright_text text-2xl md:text-base md:w-40 p-4">Try it Yourself!</button>
+            <button class="border-2 shadow-md hover:shadow-black hover:shadow-md shadow-dark_bg border-black rounded-3xl hover:bg-white hover:text-dark_text bg-dark_bg text-bright_text text-2xl md:text-base md:w-40 p-4">Try it Yourself!</button>
         </a>
     </div>
 </section>
