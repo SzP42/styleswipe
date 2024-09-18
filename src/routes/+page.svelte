@@ -27,7 +27,7 @@
                         <div class="flex justify-center"><img id="image_CTA" class="rounded-3xl shadow-black shadow-sm border-2 border-black" alt=""></div>
                         <div class="flex justify-start pl-4"><button id="right_CTA"  class="rounded-full border-2 border-black size-8"> &gt </button></div>
                         
-                    </div>
+                    </div> 
                     <div class=" text-dark_text flex justify-center pt-4"><p id="how_many_CTA" class="rounded-3xl text-2xl font-semibold bg-bright_text p-2"></p></div>
                 </div>
                 <script>
