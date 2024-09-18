@@ -15,7 +15,19 @@
 </script>
 
 <Navbar />
-<section class="py-16 bg-bright_bg justify-center flex text-center lg:py-32"> <!--Call to action-->
+<section class="bg-bright_bg"> <!--CTA-->
+    <div class="text-dark_bg font-semibold text-3xl mx-8 pt-8">
+        <h1 class="justify-start flex">Find your</h1>
+        <h1 class="justify-end   flex">dream wardrobe!</h1>
+    </div>
+    <div>
+        <a href="/app"><img src="videos/swipe.gif" alt=""></a>
+        <a href="/app" class="flex justify-center">
+            <button class="border-2 shadow-sm hover:shadow-black hover:shadow-md shadow-dark_bg border-black rounded-3xl hover:bg-white hover:text-dark_text bg-dark_bg text-bright_text text-2xl md:text-base md:w-40 p-4">Try it Yourself!</button>
+        </a>
+    </div>
+</section>
+<section class="py-16 bg-bright_bg justify-center flex text-center lg:py-32"> <!--Capsule Wardrobe-->
     <div class="container bg-white py-2">
         <div class="row gap-y-12">
             <div class="text-dark_text">
@@ -27,7 +39,7 @@
                         <div class="flex justify-center"><img id="image_CTA" class="rounded-3xl shadow-black shadow-sm border-2 border-black" alt=""></div>
                         <div class="flex justify-start pl-4"><button id="right_CTA"  class="rounded-full border-2 border-black size-8"> &gt </button></div>
                         
-                    </div>
+                    </div> 
                     <div class=" text-dark_text flex justify-center pt-4"><p id="how_many_CTA" class="rounded-3xl text-2xl font-semibold bg-bright_text p-2"></p></div>
                 </div>
                 <script>
