@@ -16,7 +16,7 @@
 
 <Navbar />
 <section class="bg-bright_bg"> <!--CTA-->
-    <div class="text-dark_bg font-bold text-4xl mx-8 pt-8">
+    <div style="font-variant: small-caps;" class="text-dark_bg font-bold text-4xl mx-8 pt-8">
         <h1 class="justify-start flex">Find your</h1>
         <h1 class="justify-end   flex">dream wardrobe!</h1>
     </div>
