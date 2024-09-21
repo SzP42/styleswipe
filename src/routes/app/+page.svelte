@@ -51,9 +51,8 @@ const { data, error } = await supabase
 if (!data) {console.log(error)}
 
 const name = data[0]['name']
-const price = data[0]['price']
 
-// get the image data from storage
+// get the image data from storage, fullSet is the name of the image file that has all the clothes on it
 const images = await supabase
 .storage
 .from(setId)
@@ -69,7 +68,7 @@ if (!imageData) {console.log(images['error'])}
         .from(setId)
         .getPublicUrl(filepath)
 
-    return {name, setId, price, publicUrl }
+    return {name, setId, publicUrl}
 }
 
     async function logout() {
