@@ -3,12 +3,21 @@
     import { goto } from '$app/navigation'
     import { currentSetId } from '$lib/stores.js'
     import { get } from 'svelte/store';
+	  import { onMount } from 'svelte';
 
     export let data
 
     if (data['error']) {console.error(data['error'])}
     
     const { supabase } = data
+
+    
+    let userLoggedIn = false
+
+    onMount(async () => {
+      const { data } = await supabase.auth.getSession() 
+      userLoggedIn = !!data["session"]
+    })
 
     // the card that will come up next
     let cardData = async (index) => {
@@ -34,13 +43,22 @@
       }
     }
 
+  // used to get a random number for the random set generator
+  function getRandomNumber(min, max) {
+    return Math.floor(Math.random() * (max - min + 1)) + min;
+}
+
   async function getNextSet() {
 
-// holds the data for all the clothes in a single set
+  let setId 
 
-const resp = await supabase.rpc('get_next_set')
-const setId = resp['data']
-if (!setId) {console.log(resp['error'])}
+  if (!userLoggedIn) {
+    setId = getRandomNumber(1, 18)
+  } else {
+    const resp = await supabase.rpc('get_next_set')
+    setId = resp['data']
+    if (!setId) {console.log(resp['error'])}
+  }
 
 // get the price and set name from the database
 const { data, error } = await supabase
@@ -77,10 +95,13 @@ if (!imageData) {console.log(images['error'])}
     goto("/")
   }
 
+  // what happens when you swipe
   function swiper(event) {
     const { detail } = event
     const { direction } = detail
-    
+
+    if (userLoggedIn) {
+
     if (direction == 'left') {
     supabase.rpc('modificate', {liked: false, set_id: $currentSetId[0]})
     .then((result => {
@@ -95,6 +116,7 @@ if (!imageData) {console.log(images['error'])}
       if (result['error']) {console.error(result['error'])}
     }))
     .catch((error) => {console.error(error)})
+  }
 
     }}
 

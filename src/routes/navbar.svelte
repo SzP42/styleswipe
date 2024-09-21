@@ -17,7 +17,7 @@
         <div class="flex mr-1 md:mr-10 lg:mr-20 justify-end items-center">
             <div class="items-center z-10">
                 <div class="items-center">
-                    <a class="btn btn-lg btn-tertiary underline" href="/login">
+                    <a class="btn btn-lg btn-tertiary underline" href="/app">
                         <button class="border-2 border-black rounded-3xl bg-dark_bg text-bright_text hover:bg-bright_bg hover:text-dark_text w-28 text-xs md:text-base md:w-40 p-2">Find Your Style!</button>
                     </a> 
                 </div>
