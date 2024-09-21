@@ -150,16 +150,17 @@
 			<svelte:component this={Card} bind:element={card2} {...card2Data} />
 	</div>
 
-	<div class="grid grid-cols-3 md:w-1/2 lg:w-1/3 w-5/6 h-20 -mt-20">
+	<div class="grid grid-cols-3 md:w-1/2 lg:w-1/3 w-5/6 h-20">
 		<div class="flex justify-start overflow-hidden">
-			<button on:click={() => {swipe("left")}} class="bg-input_bg hover:bg-special_state_bg text-4xl border-2 border-dark_bg rounded-full size-16"><img src="images/x icon.png" class="object-scale-down rounded-full"></button>
+			<button on:click={() => {swipe("left")}} class="bg-input_bg hover:bg-special_state_bg text-4xl border-2 border-dark_bg rounded-full size-16"><img src="images/x icon.png" class="object-scale-down rounded-full" alt="x"></button>
 		</div>
-		<div class="flex justify-center overflow-hidden">
-			<button on:click={() => {goto(`set/${$currentSetId[0]}`)}} class="bg-input_bg hover:bg-special_state_bg text-4xl border-2 border-dark_bg rounded-full size-16"><img src="images/cart icon.png" class="object-scale-down rounded-full"></button>
-		</div>
-		<div class="flex justify-end overflow-hidden">
-			<button on:click={() => {swipe("right")}} class="bg-input_bg hover:bg-special_state_bg text-4xl border-2 border-dark_bg rounded-full size-16 "><img src="images/love icon.png" class="object-contain rounded-full"></button>
 
+		<div class="flex justify-center overflow-hidden">
+			<button on:click={() => {goto(`set/${$currentSetId[0]}`)}} class="bg-input_bg hover:bg-special_state_bg text-4xl border-2 border-dark_bg rounded-full size-16"><img src="images/cart icon.png" class="object-scale-down rounded-full" alt="buy"></button>
+		</div>
+
+		<div class="flex justify-end overflow-hidden">
+			<button on:click={() => {swipe("right")}} class="bg-input_bg hover:bg-special_state_bg text-4xl border-2 border-dark_bg rounded-full size-16 "><img src="images/love icon.png" class="object-contain rounded-full" alt="love"></button>
 		</div>
 	</div>
 	
